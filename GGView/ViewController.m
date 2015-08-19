@@ -19,12 +19,10 @@
 //}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor redColor];
-    self.questions = [[NSArray alloc] initWithObjects:@"first",
-                      @"second",
-                      @"third",
-                      @"fourth",
-                      nil];
+    self.view.backgroundColor = [UIColor colorWithRed:1.0 green:0.58 blue:0.35 alpha:1.0];
+    NSDictionary *dict1 = @{@"title":@"あなたの仕事についてうかがいます。", @"question":@"非常にたくさんの仕事をしなければならないですか？"};
+    NSDictionary *dict2 = @{@"title":@"xxx", @"question":@"sss"};
+    self.questions = [[NSArray alloc] initWithObjects: dict1, dict2, nil];
     self.answeredCards = [[NSMutableArray alloc] init];
     self.allCards = [[NSMutableArray alloc] init];
     [self loadCards];
@@ -42,8 +40,9 @@
     if ( count > 0 ) {
         NSInteger cardsToLoad = count > 4 ? 4 : count;
         for (int i = 0; i < count; i++) {
-            GGDraggableView *ggdraggableView = [[GGDraggableView alloc] initWithFrame:CGRectMake(60, 60, 200, 260)];
-            ggdraggableView.information.text = [self.questions objectAtIndex:i];
+            GGDraggableView *ggdraggableView = [[GGDraggableView alloc] initWithFrame:CGRectMake(20, 60, 280, 260)];
+            ggdraggableView.title.text = [self.questions objectAtIndex:i][@"title"];
+            ggdraggableView.question.text = [self.questions objectAtIndex:i][@"question"];
             [self.allCards addObject:ggdraggableView];
             if ( i < cardsToLoad) {
                 [self.answeredCards addObject:ggdraggableView];
@@ -53,6 +52,7 @@
             if (i > 0) {
                 [self.view insertSubview:[self.answeredCards objectAtIndex:i]
                        belowSubview:[self.answeredCards objectAtIndex:i - 1]];
+                
             } else {
                 [self.view
                  addSubview:[self.answeredCards objectAtIndex:i]];

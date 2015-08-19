@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 @interface GGDraggableView : UIView
-@property (nonatomic, strong) UILabel *information;
+@property (nonatomic, strong) UILabel *title;
+@property (nonatomic, strong) UILabel *question;
 @end

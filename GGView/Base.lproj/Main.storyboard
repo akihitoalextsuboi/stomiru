@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,19 +17,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jdp-uH-O7s">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jdp-uH-O7s">
                                 <rect key="frame" x="279" y="264" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AAX-4e-Zl6">
+                                <rect key="frame" x="277" y="440" width="45" height="30"/>
+                                <state key="normal" title="そうだ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sih-li-ujc">
+                                <rect key="frame" x="262" y="520" width="75" height="30"/>
+                                <state key="normal" title="ややちがう">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3q9-Pc-jMR">
+                                <rect key="frame" x="46" y="470" width="45" height="30"/>
+                                <state key="normal" title="ちがう">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s8O-Vc-0PU">
+                                <rect key="frame" x="479" y="470" width="75" height="30"/>
+                                <state key="normal" title="まあそうだ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Sih-li-ujc" firstAttribute="top" secondItem="AAX-4e-Zl6" secondAttribute="bottom" constant="50" id="9zX-yn-LGb"/>
+                            <constraint firstAttribute="centerX" secondItem="AAX-4e-Zl6" secondAttribute="centerX" id="Uut-74-jiP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3q9-Pc-jMR" secondAttribute="bottom" constant="100" id="X1w-1E-GPC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="s8O-Vc-0PU" secondAttribute="trailing" constant="30" id="lMt-Bj-EFn"/>
+                            <constraint firstAttribute="centerX" secondItem="Sih-li-ujc" secondAttribute="centerX" id="lew-rb-JWC"/>
+                            <constraint firstItem="3q9-Pc-jMR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="n8t-YM-RhR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="s8O-Vc-0PU" secondAttribute="bottom" constant="100" id="xdC-qh-SWf"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Sih-li-ujc" secondAttribute="bottom" constant="50" id="yWz-Su-TF7"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Jdp-uH-O7s"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="72" y="193"/>
+            <point key="canvasLocation" x="56" y="107"/>
         </scene>
     </scenes>
 </document>

@@ -21,15 +21,22 @@
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (!self) return nil;
+    [self setupView];
+    self.backgroundColor = [UIColor whiteColor];
     
-    self.backgroundColor = [UIColor greenColor];
+    self.title = [[UILabel alloc] initWithFrame:CGRectMake(0, 50, self.frame.size.width, 50)];
+    self.title.text = @"no info";
+    [self.title setTextAlignment:NSTextAlignmentCenter];
+    self.title.textColor = [UIColor redColor];
+    self.title.numberOfLines = 0;
+    [self addSubview:self.title];
     
-    self.information = [[UILabel alloc] initWithFrame:CGRectMake(0, 50, self.frame.size.width, 100)];
-    self.information.text = @"no info";
-
-    [self.information setTextAlignment:NSTextAlignmentCenter];
-    self.information.textColor = [UIColor blackColor];
-    [self addSubview:self.information];
+    self.question = [[UILabel alloc] initWithFrame:CGRectMake(0, 120, self.frame.size.width, 100)];
+    self.question.text = @"no info";
+    [self.question setTextAlignment:NSTextAlignmentCenter];
+    self.question.textColor = [UIColor blackColor];
+    self.question.numberOfLines = 0;
+    [self addSubview:self.question];
     
     self.panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(dragged:)];
     [self addGestureRecognizer:self.panGestureRecognizer];
@@ -41,10 +48,16 @@
 - (void)loadImageAndStyle {
     UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bar"]];
     
-    imageView.frame = CGRectMake(imageView.frame.origin.x, imageView.frame.origin.y, 200, 200);
+    imageView.frame = CGRectMake(imageView.frame.origin.x, imageView.frame.origin.y, 260, 260);
     
     [self addSubview:imageView];
-    self.layer.cornerRadius = 8;
+    self.layer.cornerRadius = 20;
+    self.layer.shadowOffset = CGSizeMake(7, 7);
+    self.layer.shadowRadius = 5;
+    self.layer.shadowOpacity = 0.5;
+}
+- (void)setupView {
+    self.layer.cornerRadius = 20;
     self.layer.shadowOffset = CGSizeMake(7, 7);
     self.layer.shadowRadius = 5;
     self.layer.shadowOpacity = 0.5;
