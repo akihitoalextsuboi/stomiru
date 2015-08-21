@@ -23,7 +23,7 @@
 //}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor colorWithRed:1.0 green:0.58 blue:0.35 alpha:1.0];
+    self.view.backgroundColor = [UIColor colorWithRed:1.0 green:0.8 blue:0.5 alpha:1.0];
     NSDictionary *dict1 = @{@"title":@"あなたの仕事についてうかがいます。", @"question":@"非常にたくさんの仕事をしなければならないですか？"};
     NSDictionary *dict2 = @{@"title":@"xxx", @"question":@"sss"};
     NSDictionary *dict3 = @{@"title":@"xxx", @"question":@"sss"};
@@ -49,7 +49,7 @@
     if ( count > 0 ) {
         NSInteger cardsToLoad = count > 4 ? 4 : count;
         for (int i = 0; i < count; i++) {
-            DraggableView *draggableView = [[DraggableView alloc] initWithFrame:CGRectMake(20, 60, 280, 260)];
+            DraggableView *draggableView = [[DraggableView alloc] initWithFrame:CGRectMake(20, 60, 280, 320)];
             draggableView.title.text = [self.questions objectAtIndex:i][@"title"];
             draggableView.question.text = [self.questions objectAtIndex:i][@"question"];
             draggableView.delegate = self;

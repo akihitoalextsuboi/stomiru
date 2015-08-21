@@ -59,9 +59,9 @@
 }
 - (void)setupView {
     self.layer.cornerRadius = 20;
-    self.layer.shadowOffset = CGSizeMake(7, 7);
+    self.layer.shadowOffset = CGSizeMake(3, 3);
     self.layer.shadowRadius = 5;
-    self.layer.shadowOpacity = 0.5;
+    self.layer.shadowOpacity = 0.2;
 }
 
 - (void)dragged:(UIPanGestureRecognizer *)gestureRecognizer {
