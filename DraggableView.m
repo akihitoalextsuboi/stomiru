@@ -139,7 +139,7 @@
 }
 
 - (void)swipeOutToBottom {
-    CGPoint finishPoint = CGPointMake(160, 2 * self.yDistance);
+    CGPoint finishPoint = CGPointMake(160, 4 * self.yDistance);
     [UIView animateWithDuration:0.3
                      animations:^{
                          self.center = finishPoint;

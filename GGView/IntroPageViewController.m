@@ -28,8 +28,8 @@
     UIViewController *intro4 = [self.storyboard instantiateViewControllerWithIdentifier:@"intro4"];
     UIViewController *intro5 = [self.storyboard instantiateViewControllerWithIdentifier:@"intro5"];
     UIViewController *intro6 = [self.storyboard instantiateViewControllerWithIdentifier:@"intro6"];
-
-    introViewControllers = @[intro1, intro2, intro3, intro4, intro5, intro6];
+    UIViewController *intro7 = [self.storyboard instantiateViewControllerWithIdentifier:@"intro7"];
+    introViewControllers = @[intro1, intro2, intro3, intro4, intro5, intro7, intro6];
     [self setViewControllers:@[intro1] direction:UIPageViewControllerNavigationDirectionForward
                     animated:YES
                   completion:nil];

@@ -398,6 +398,63 @@
             </objects>
             <point key="canvasLocation" x="-789" y="623"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="w6e-Z5-PfP">
+            <objects>
+                <viewController storyboardIdentifier="intro7" id="zJg-VT-sGS" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XQb-Ae-Ab6"/>
+                        <viewControllerLayoutGuide type="bottom" id="iQk-Mf-XF7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0Kl-SQ-v2K">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xq6-la-uQS">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="ストミル" id="wdq-t2-AGn"/>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tutorial" translatesAutoresizingMaskIntoConstraints="NO" id="Hv2-hM-5Gq">
+                                <rect key="frame" x="135" y="81" width="330" height="550"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="550" id="Zyb-Ai-DXn"/>
+                                    <constraint firstAttribute="width" constant="330" id="akE-tt-fqf"/>
+                                </constraints>
+                            </imageView>
+                            <imageView multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="bottomLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tutorial" translatesAutoresizingMaskIntoConstraints="NO" id="IwA-QY-4qT">
+                                <rect key="frame" x="150" y="54" width="300" height="1070"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="pZQ-mQ-rpc"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="xq6-la-uQS" secondAttribute="trailing" id="10V-Jp-NL3"/>
+                            <constraint firstItem="IwA-QY-4qT" firstAttribute="top" secondItem="xq6-la-uQS" secondAttribute="bottom" constant="10" id="9nm-pv-ufv"/>
+                            <constraint firstAttribute="centerX" secondItem="IwA-QY-4qT" secondAttribute="centerX" id="Bb5-1e-7xk"/>
+                            <constraint firstItem="Hv2-hM-5Gq" firstAttribute="top" secondItem="xq6-la-uQS" secondAttribute="bottom" constant="37" id="CIe-lL-cCt"/>
+                            <constraint firstAttribute="centerX" secondItem="Hv2-hM-5Gq" secondAttribute="centerX" id="bjT-wj-KSt"/>
+                            <constraint firstItem="xq6-la-uQS" firstAttribute="leading" secondItem="0Kl-SQ-v2K" secondAttribute="leading" id="j8I-2Q-gWd"/>
+                            <constraint firstItem="xq6-la-uQS" firstAttribute="top" secondItem="0Kl-SQ-v2K" secondAttribute="top" id="soy-M8-LdS"/>
+                            <constraint firstItem="Hv2-hM-5Gq" firstAttribute="top" secondItem="0Kl-SQ-v2K" secondAttribute="topMargin" constant="10" id="znq-Va-Zqz"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="IwA-QY-4qT"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="znq-Va-Zqz"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BIE-UY-G08" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-169" y="623"/>
+        </scene>
         <!--Intro6 View Controller-->
         <scene sceneID="ArT-Xc-vNo">
             <objects>
@@ -471,7 +528,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MNg-Qz-xUg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-114" y="623"/>
+            <point key="canvasLocation" x="460" y="631"/>
         </scene>
         <!--Question View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -627,7 +684,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h7d-Ap-Idf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-164" y="1969"/>
+            <point key="canvasLocation" x="432" y="1971"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="93e-wr-nbZ">
@@ -653,7 +710,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="次のページから結果を見てみましょう！" translatesAutoresizingMaskIntoConstraints="NO" id="anf-gf-zdc">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="以上で終了になります。 次のページから結果を見てみましょう！" translatesAutoresizingMaskIntoConstraints="NO" id="anf-gf-zdc">
                                 <rect key="frame" x="150" y="129.5" width="300" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -678,7 +735,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rXf-00-jf2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-349" y="2631"/>
+            <point key="canvasLocation" x="-235" y="1979"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="XUS-SU-Q2W">
@@ -741,7 +798,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4wM-UH-PbA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="492" y="1963"/>
+            <point key="canvasLocation" x="1102" y="1953"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="S7n-hu-oHQ">
@@ -803,7 +860,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lww-gA-xuJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1139" y="1963"/>
+            <point key="canvasLocation" x="1785" y="1953"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Fb2-7w-x0l">
@@ -873,7 +930,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dlM-xJ-GUV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1803" y="1963"/>
+            <point key="canvasLocation" x="2429" y="1953"/>
         </scene>
     </scenes>
     <resources>
@@ -881,5 +938,6 @@
         <image name="result1" width="386" height="345"/>
         <image name="result2" width="384" height="385"/>
         <image name="result3" width="380" height="343"/>
+        <image name="tutorial" width="532" height="1070"/>
     </resources>
 </document>
