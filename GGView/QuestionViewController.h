@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "GGDraggableView.h"
+#import "DraggableView.h"
 @interface QuestionViewController : UIViewController
 
 @property (nonatomic) NSArray *questions;

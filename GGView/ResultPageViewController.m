@@ -1,37 +1,39 @@
 //
-//  PageViewController.m
+//  ResultPagViewController.m
 //  GGView
 //
 //  Created by rainbowaffro on 2015/08/21.
 //  Copyright (c) 2015年 rainbowaffro. All rights reserved.
 //
 
-#import "PageViewController.h"
-
-@interface PageViewController () <UIPageViewControllerDataSource, UIPageViewControllerDelegate>
+#import "ResultPageViewController.h"
+@interface ResultPageViewController () <UIPageViewControllerDataSource, UIPageViewControllerDelegate>
 
 @end
 
-@implementation PageViewController {
-    NSArray *introViewControllers;
+@implementation ResultPageViewController {
+    NSArray *resultViewControllers;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.delegate = self;
     self.dataSource = self;
-    UIViewController *intro1 = [self.storyboard instantiateViewControllerWithIdentifier:@"intro1"];
-    UIViewController *intro2 = [self.storyboard instantiateViewControllerWithIdentifier:@"intro2"];
-    UIViewController *intro3 = [self.storyboard instantiateViewControllerWithIdentifier:@"intro3"];
-    introViewControllers = @[intro1, intro2, intro3];
-    [self setViewControllers:@[intro1] direction:UIPageViewControllerNavigationDirectionForward
+    UIViewController *result0 = [self.storyboard instantiateViewControllerWithIdentifier:@"result0"];
+    UIViewController *result1 = [self.storyboard instantiateViewControllerWithIdentifier:@"result1"];
+    UIViewController *result2 = [self.storyboard instantiateViewControllerWithIdentifier:@"result2"];
+    UIViewController *result3 = [self.storyboard instantiateViewControllerWithIdentifier:@"result3"];
+    UIViewController *result4 = [self.storyboard instantiateViewControllerWithIdentifier:@"result4"];
+    
+    resultViewControllers = @[result0, result1, result2, result3, result4];
+    [self setViewControllers:@[result0] direction:UIPageViewControllerNavigationDirectionForward
                     animated:YES
                   completion:nil];
     UIPageControl *pageControl = [UIPageControl appearance];
+    NSLog(@"here");
     pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
     pageControl.currentPageIndicatorTintColor = [UIColor blackColor];
     pageControl.backgroundColor = [UIColor whiteColor];
-
     // Do any additional setup after loading the view.
 }
 
@@ -41,34 +43,35 @@
 }
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController {
-    NSInteger currentIndex = [introViewControllers indexOfObject:viewController];
+    NSInteger currentIndex = [resultViewControllers indexOfObject:viewController];
     --currentIndex;
     if (currentIndex < 0)
     {
         return nil;
     }
-    currentIndex = currentIndex % introViewControllers.count;
-    return [introViewControllers objectAtIndex:currentIndex];
+    currentIndex = currentIndex % resultViewControllers.count;
+    return [resultViewControllers objectAtIndex:currentIndex];
 }
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController  viewControllerAfterViewController:(UIViewController *)viewController {
-    NSInteger currentIndex = [introViewControllers indexOfObject:viewController];
+    NSInteger currentIndex = [resultViewControllers indexOfObject:viewController];
     ++currentIndex;
-    if (currentIndex > [introViewControllers count]) {
+    if (currentIndex >= [resultViewControllers count]) {
         return nil;
     }
-    currentIndex = currentIndex % introViewControllers.count;
-    return [introViewControllers objectAtIndex:currentIndex];
+    currentIndex = currentIndex % resultViewControllers.count;
+    return [resultViewControllers objectAtIndex:currentIndex];
 }
 
 - (NSInteger)presentationCountForPageViewController:(UIPageViewController *)pageViewController {
-    return [introViewControllers count];
+    return [resultViewControllers count];
 }
 
 - (NSInteger)presentationIndexForPageViewController:(UIPageViewController *)pageViewController {
     return 0;
-
 }
+
+
 /*
 #pragma mark - Navigation
 

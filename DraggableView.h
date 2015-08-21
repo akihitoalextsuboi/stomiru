@@ -8,7 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
-@interface GGDraggableView : UIView
+@protocol DraggableViewDelegate <NSObject>
+- (void)cardSwiped:(UIView *)card;
+
+@end
+@interface DraggableView : UIView
+@property (weak) id <DraggableViewDelegate> delegate;
 @property (nonatomic, strong) UILabel *title;
 @property (nonatomic, strong) UILabel *question;
 @end

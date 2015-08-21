@@ -7,12 +7,16 @@
 //
 
 #import "QuestionViewController.h"
+#import "DraggableView.h"
+#import "ResultPageViewController.h"
 
-@interface QuestionViewController ()
-
+@interface QuestionViewController () <DraggableViewDelegate>
+- (void)cardSwiped:(UIView *)card;
 @end
 
-@implementation QuestionViewController
+@implementation QuestionViewController {
+    NSInteger loadedCardsIndex;
+}
 
 //- (void)loadView {
 //   // self.view = [[GGView alloc] init];
@@ -22,7 +26,12 @@
     self.view.backgroundColor = [UIColor colorWithRed:1.0 green:0.58 blue:0.35 alpha:1.0];
     NSDictionary *dict1 = @{@"title":@"あなたの仕事についてうかがいます。", @"question":@"非常にたくさんの仕事をしなければならないですか？"};
     NSDictionary *dict2 = @{@"title":@"xxx", @"question":@"sss"};
-    self.questions = [[NSArray alloc] initWithObjects: dict1, dict2, nil];
+    NSDictionary *dict3 = @{@"title":@"xxx", @"question":@"sss"};
+    NSDictionary *dict4 = @{@"title":@"xxx", @"question":@"sss"};
+    NSDictionary *dict5 = @{@"title":@"xxx", @"question":@"sss"};
+    NSDictionary *dict6 = @{@"title":@"xxx", @"question":@"sss"};
+    NSDictionary *dict7 = @{@"title":@"xxx", @"question":@"sss"};
+    self.questions = [[NSArray alloc] initWithObjects: dict1, dict2, dict3, dict4, dict5, dict6, dict7, nil];
     self.answeredCards = [[NSMutableArray alloc] init];
     self.allCards = [[NSMutableArray alloc] init];
     [self loadCards];
@@ -40,12 +49,13 @@
     if ( count > 0 ) {
         NSInteger cardsToLoad = count > 4 ? 4 : count;
         for (int i = 0; i < count; i++) {
-            GGDraggableView *ggdraggableView = [[GGDraggableView alloc] initWithFrame:CGRectMake(20, 60, 280, 260)];
-            ggdraggableView.title.text = [self.questions objectAtIndex:i][@"title"];
-            ggdraggableView.question.text = [self.questions objectAtIndex:i][@"question"];
-            [self.allCards addObject:ggdraggableView];
+            DraggableView *draggableView = [[DraggableView alloc] initWithFrame:CGRectMake(20, 60, 280, 260)];
+            draggableView.title.text = [self.questions objectAtIndex:i][@"title"];
+            draggableView.question.text = [self.questions objectAtIndex:i][@"question"];
+            draggableView.delegate = self;
+            [self.allCards addObject:draggableView];
             if ( i < cardsToLoad) {
-                [self.answeredCards addObject:ggdraggableView];
+                [self.answeredCards addObject:draggableView];
             }
         }
         for (int i = 0; i < [self.answeredCards count]; i++) {
@@ -57,9 +67,23 @@
                 [self.view
                  addSubview:[self.answeredCards objectAtIndex:i]];
             }
+            loadedCardsIndex++;
         }
         
     }
 }
 
+- (void)cardSwiped:(UIView *)card {
+    [self.answeredCards removeObjectAtIndex:0];
+    if (loadedCardsIndex < self.allCards.count) {
+        [self.answeredCards addObject:[self.allCards objectAtIndex:loadedCardsIndex]];
+        loadedCardsIndex++;
+        [self.view insertSubview:[self.answeredCards objectAtIndex:(4 - 1)] belowSubview:[self.answeredCards objectAtIndex:(4 - 2)]];
+    }
+    if (self.answeredCards.count == 0) {
+        ResultPageViewController *resultPageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"resultPageViewController"];
+        [self presentViewController:resultPageViewController animated:NO completion:nil];
+    }
+   
+}
 @end

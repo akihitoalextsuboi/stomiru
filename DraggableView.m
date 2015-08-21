@@ -6,9 +6,9 @@
 //  Copyright (c) 2015年 rainbowaffro. All rights reserved.
 //
 
-#import "GGDraggableView.h"
+#import "DraggableView.h"
 
-@interface GGDraggableView ()
+@interface DraggableView ()
 @property (nonatomic, strong) UIPanGestureRecognizer *panGestureRecognizer;
 @property (nonatomic) CGPoint originalPoint;
 @property (nonatomic) CGFloat xDistance;
@@ -16,7 +16,8 @@
 
 @end
 
-@implementation GGDraggableView
+@implementation DraggableView
+@synthesize delegate;
 
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
@@ -88,15 +89,19 @@
             if (self.xDistance > 120) {
                 NSLog(@"RightSwipeAction");
                 [self swipeOutToRight];
+                [delegate cardSwiped:self];
             } else if (self.xDistance < -120) {
                 NSLog(@"LeftSwipeAction");
                 [self swipeOutToLeft];
+                [delegate cardSwiped:self];
             } else if (self.yDistance > 120) {
                 NSLog(@"bottomSwipeAction");
                 [self swipeOutToBottom];
+                [delegate cardSwiped:self];
             } else if (self.yDistance < -120) {
                 NSLog(@"topSwipeAction");
                 [self swipeOutToTop];
+                [delegate cardSwiped:self];
             } else {
                 [self resetViewPositionAndTransformations];
             }
