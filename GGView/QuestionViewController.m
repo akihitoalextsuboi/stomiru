@@ -23,7 +23,7 @@
 //}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor colorWithRed:1.0 green:0.8 blue:0.5 alpha:1.0];
+    self.view.backgroundColor = [UIColor colorWithRed:253.0/255.0 green:234.8/255.0 blue:217.0/255.0 alpha:1.0];
     NSDictionary *dict1 = @{@"title":@"あなたの仕事についてうかがいます。", @"question":@"非常にたくさんの仕事をしなければならないですか？"};
     NSDictionary *dict2 = @{@"title":@"あなたの仕事についてうかがいます。", @"question":@"時間内に仕事が処理しきれない"};
     NSDictionary *dict3 = @{@"title":@"あなたの仕事についてうかがいます。", @"question":@"一生懸命働かなければならない"};
