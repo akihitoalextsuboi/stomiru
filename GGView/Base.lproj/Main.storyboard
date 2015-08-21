@@ -137,6 +137,9 @@
                                 <state key="normal" title="認証して次へ">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="zfw-1g-tmE" kind="show" id="9Ua-Wa-MoS"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppIcon29x29" translatesAutoresizingMaskIntoConstraints="NO" id="XWS-xh-4bY">
                                 <rect key="frame" x="220.5" y="90" width="29" height="29"/>
@@ -181,7 +184,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k5V-ax-Zr9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="460" y="-69"/>
+            <point key="canvasLocation" x="474" y="-117"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="uBH-au-Tck">
@@ -681,16 +684,20 @@
                                     <navigationItem title="ストミル" id="MJu-t8-Zad"/>
                                 </items>
                             </navigationBar>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TT8-7B-X06">
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TT8-7B-X06">
                                 <rect key="frame" x="0.0" y="44" width="600" height="556"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="ITu-r0-YOV" firstAttribute="top" secondItem="TT8-7B-X06" secondAttribute="bottom" id="GUe-pr-CH8"/>
+                            <constraint firstItem="TT8-7B-X06" firstAttribute="leading" secondItem="GbL-iI-7Px" secondAttribute="leading" id="HGg-tU-9QJ"/>
                             <constraint firstItem="19A-lb-Pxc" firstAttribute="top" secondItem="GbL-iI-7Px" secondAttribute="top" id="J3x-If-Kfb"/>
+                            <constraint firstAttribute="trailing" secondItem="TT8-7B-X06" secondAttribute="trailing" id="UwW-1X-we4"/>
                             <constraint firstItem="19A-lb-Pxc" firstAttribute="leading" secondItem="GbL-iI-7Px" secondAttribute="leading" id="ckd-Xa-PhV"/>
                             <constraint firstAttribute="trailing" secondItem="19A-lb-Pxc" secondAttribute="trailing" id="f0O-0q-o0r"/>
+                            <constraint firstItem="TT8-7B-X06" firstAttribute="top" secondItem="19A-lb-Pxc" secondAttribute="bottom" id="lYW-i7-oEi"/>
                         </constraints>
                     </view>
                     <connections>
@@ -797,7 +804,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="以上で終了になります。 次のページから結果を見てみましょう！" translatesAutoresizingMaskIntoConstraints="NO" id="anf-gf-zdc">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="以上で回答は終了になります。 次のページから結果を見てみましょう！" translatesAutoresizingMaskIntoConstraints="NO" id="anf-gf-zdc">
                                 <rect key="frame" x="150" y="129.5" width="300" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -1007,7 +1014,7 @@
                                     <constraint firstAttribute="height" constant="150" id="KhX-kC-pwi"/>
                                     <constraint firstAttribute="width" constant="300" id="PV4-pr-3BR"/>
                                 </constraints>
-                                <string key="text">以上で回答は終了となります。
+                                <string key="text">以上で診断は終了となります。
 ありがとうございました！
 </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>

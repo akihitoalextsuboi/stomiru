@@ -1,28 +1,21 @@
 //
-//  WebViewController.m
+//  Intro3ViewController.m
 //  GGView
 //
 //  Created by rainbowaffro on 2015/08/22.
 //  Copyright (c) 2015年 rainbowaffro. All rights reserved.
 //
 
-#import "WebViewController.h"
+#import "Intro3ViewController.h"
 
-@interface WebViewController ()
+@interface Intro3ViewController ()
 
 @end
 
-@implementation WebViewController
+@implementation Intro3ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSString *urlString = @"http://kokoro.mhlw.go.jp/check/advice.html";
-    NSURL *url = [NSURL URLWithString:urlString];
-    NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url];
-    [self.webView loadRequest:urlRequest];
-    
-    
-    
     // Do any additional setup after loading the view.
 }
 

@@ -21,6 +21,8 @@
 		D8AA1C991B871A380058B609 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8AA1C971B871A380058B609 /* Main.storyboard */; };
 		D8AA1C9B1B8777110058B609 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8AA1C9A1B8777110058B609 /* Images.xcassets */; };
 		D8AA1C9E1B8782E00058B609 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AA1C9D1B8782E00058B609 /* WebViewController.m */; };
+		D8AA1CA11B8798380058B609 /* Intro3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AA1CA01B8798380058B609 /* Intro3ViewController.m */; };
+		D8AA1CA41B87984C0058B609 /* Intro4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AA1CA31B87984C0058B609 /* Intro4ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,10 @@
 		D8AA1C9A1B8777110058B609 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../../../.Trash/Images.xcassets; sourceTree = "<group>"; };
 		D8AA1C9C1B8782E00058B609 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		D8AA1C9D1B8782E00058B609 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		D8AA1C9F1B8798380058B609 /* Intro3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Intro3ViewController.h; sourceTree = "<group>"; };
+		D8AA1CA01B8798380058B609 /* Intro3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Intro3ViewController.m; sourceTree = "<group>"; };
+		D8AA1CA21B87984C0058B609 /* Intro4ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Intro4ViewController.h; sourceTree = "<group>"; };
+		D8AA1CA31B87984C0058B609 /* Intro4ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Intro4ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +122,10 @@
 				D8642FAA1B84C0EC00EF8A93 /* DraggableView.h */,
 				D8642FAB1B84C0EC00EF8A93 /* DraggableView.m */,
 				D8AA1C911B86F5EA0058B609 /* Intro6ViewController.h */,
+				D8AA1C9F1B8798380058B609 /* Intro3ViewController.h */,
+				D8AA1CA01B8798380058B609 /* Intro3ViewController.m */,
+				D8AA1CA21B87984C0058B609 /* Intro4ViewController.h */,
+				D8AA1CA31B87984C0058B609 /* Intro4ViewController.m */,
 				D8AA1C921B86F5EA0058B609 /* Intro6ViewController.m */,
 				D8AA1C8E1B86D47C0058B609 /* Intro2ViewController.h */,
 				D8AA1C8F1B86D47C0058B609 /* Intro2ViewController.m */,
@@ -256,7 +266,9 @@
 			files = (
 				D8AA1C901B86D47C0058B609 /* Intro2ViewController.m in Sources */,
 				D8AA1C9E1B8782E00058B609 /* WebViewController.m in Sources */,
+				D8AA1CA11B8798380058B609 /* Intro3ViewController.m in Sources */,
 				D8642F8D1B84C0D700EF8A93 /* QuestionViewController.m in Sources */,
+				D8AA1CA41B87984C0058B609 /* Intro4ViewController.m in Sources */,
 				D8AA1C931B86F5EA0058B609 /* Intro6ViewController.m in Sources */,
 				D8AA1C961B86FC740058B609 /* ResultPageViewController.m in Sources */,
 				D8642F8A1B84C0D700EF8A93 /* AppDelegate.m in Sources */,
