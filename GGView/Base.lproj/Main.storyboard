@@ -97,7 +97,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="個人認証します" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ki-Kl-JWD">
-                                <rect key="frame" x="240" y="94" width="119" height="20.5"/>
+                                <rect key="frame" x="254.5" y="94" width="119" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -139,7 +139,7 @@
                                 </state>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppIcon29x29" translatesAutoresizingMaskIntoConstraints="NO" id="XWS-xh-4bY">
-                                <rect key="frame" x="206" y="90" width="29" height="29"/>
+                                <rect key="frame" x="220.5" y="90" width="29" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="29" id="6j0-wc-nOo"/>
                                     <constraint firstAttribute="height" constant="29" id="veg-lp-eMb"/>
@@ -167,7 +167,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="EMc-WA-ARL" secondAttribute="trailing" id="tBJ-wp-BC1"/>
                             <constraint firstItem="EGE-QF-ZIU" firstAttribute="top" secondItem="onD-2t-PFl" secondAttribute="bottom" constant="30" id="uch-CT-JGZ"/>
                             <constraint firstItem="XWS-xh-4bY" firstAttribute="centerY" secondItem="1Ki-Kl-JWD" secondAttribute="centerY" id="uyb-DP-bIg"/>
-                            <constraint firstAttribute="centerX" secondItem="1Ki-Kl-JWD" secondAttribute="centerX" id="x97-Bs-B58"/>
+                            <constraint firstAttribute="centerX" secondItem="1Ki-Kl-JWD" secondAttribute="centerX" constant="-14" id="x97-Bs-B58"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -275,7 +275,7 @@
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="注意事項" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgU-Yp-ioA">
-                                <rect key="frame" x="266" y="94" width="68" height="20.5"/>
+                                <rect key="frame" x="280" y="94" width="68" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -304,7 +304,7 @@
                                 </state>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppIcon29x29" translatesAutoresizingMaskIntoConstraints="NO" id="FYx-tn-JIV">
-                                <rect key="frame" x="232" y="90.5" width="29" height="29"/>
+                                <rect key="frame" x="246" y="90.5" width="29" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="HyY-iG-kif"/>
                                     <constraint firstAttribute="width" constant="29" id="kNe-3s-IUV"/>
@@ -323,7 +323,7 @@
                             <constraint firstAttribute="centerX" secondItem="B9F-mJ-kd2" secondAttribute="centerX" id="cYz-CS-0PQ"/>
                             <constraint firstAttribute="centerX" secondItem="dwd-Db-hD4" secondAttribute="centerX" id="idl-cn-SK4"/>
                             <constraint firstItem="pgU-Yp-ioA" firstAttribute="leading" secondItem="FYx-tn-JIV" secondAttribute="trailing" constant="5" id="qxi-RH-uIj"/>
-                            <constraint firstAttribute="centerX" secondItem="pgU-Yp-ioA" secondAttribute="centerX" id="yqW-e7-smc"/>
+                            <constraint firstAttribute="centerX" secondItem="pgU-Yp-ioA" secondAttribute="centerX" constant="-14" id="yqW-e7-smc"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -350,7 +350,7 @@
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="注意事項" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vqm-Sl-s5W">
-                                <rect key="frame" x="266" y="94" width="68" height="20.5"/>
+                                <rect key="frame" x="280" y="94" width="68" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -389,7 +389,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppIcon29x29" translatesAutoresizingMaskIntoConstraints="NO" id="ozb-PH-PM5">
-                                <rect key="frame" x="232" y="90" width="29" height="29"/>
+                                <rect key="frame" x="246" y="90" width="29" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="g6U-TG-R7t"/>
                                     <constraint firstAttribute="width" constant="29" id="o05-bt-ndQ"/>
@@ -405,7 +405,7 @@
                             <constraint firstItem="Bh7-MG-ZTi" firstAttribute="top" secondItem="O9x-ko-Hcl" secondAttribute="bottom" constant="30" id="dZg-8I-nDv"/>
                             <constraint firstItem="7Cq-r8-xwR" firstAttribute="top" secondItem="Vqm-Sl-s5W" secondAttribute="bottom" constant="50" id="eQd-PY-dgM"/>
                             <constraint firstItem="RSb-FW-tJZ" firstAttribute="top" secondItem="Mes-hI-Duh" secondAttribute="top" id="gao-I3-nib"/>
-                            <constraint firstAttribute="centerX" secondItem="Vqm-Sl-s5W" secondAttribute="centerX" id="hZT-lN-Nkn"/>
+                            <constraint firstAttribute="centerX" secondItem="Vqm-Sl-s5W" secondAttribute="centerX" constant="-14" id="hZT-lN-Nkn"/>
                             <constraint firstItem="Vqm-Sl-s5W" firstAttribute="top" secondItem="RSb-FW-tJZ" secondAttribute="bottom" constant="50" id="kAm-eK-9Qy"/>
                             <constraint firstAttribute="centerX" secondItem="7Cq-r8-xwR" secondAttribute="centerX" id="njC-vt-7ei"/>
                             <constraint firstAttribute="centerX" secondItem="Bh7-MG-ZTi" secondAttribute="centerX" id="onk-Z2-Pme"/>
@@ -727,7 +727,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="診断結果 1/3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xWc-vD-QET">
-                                <rect key="frame" x="251" y="59" width="98" height="20.5"/>
+                                <rect key="frame" x="265" y="59" width="98" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -746,7 +746,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppIcon29x29" translatesAutoresizingMaskIntoConstraints="NO" id="O0P-P4-9SY">
-                                <rect key="frame" x="217" y="55" width="29" height="29"/>
+                                <rect key="frame" x="231" y="55" width="29" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="29" id="S5c-7j-FKX"/>
                                     <constraint firstAttribute="height" constant="29" id="fYh-De-J30"/>
@@ -764,7 +764,7 @@
                             <constraint firstItem="xWc-vD-QET" firstAttribute="leading" secondItem="O0P-P4-9SY" secondAttribute="trailing" constant="5" id="jhi-bO-qRB"/>
                             <constraint firstItem="O0P-P4-9SY" firstAttribute="centerY" secondItem="xWc-vD-QET" secondAttribute="centerY" id="lSh-Hv-yhy"/>
                             <constraint firstAttribute="centerX" secondItem="6GJ-2Z-OWe" secondAttribute="centerX" id="m39-Tq-ccB"/>
-                            <constraint firstAttribute="centerX" secondItem="xWc-vD-QET" secondAttribute="centerX" id="nQh-h8-bJu"/>
+                            <constraint firstAttribute="centerX" secondItem="xWc-vD-QET" secondAttribute="centerX" constant="-14" id="nQh-h8-bJu"/>
                             <constraint firstItem="Fek-yr-D13" firstAttribute="top" secondItem="s5T-U2-Cpa" secondAttribute="top" id="yyo-jP-QI3"/>
                         </constraints>
                     </view>
@@ -792,7 +792,7 @@
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="お疲れ様でした！" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bot-Gu-HKB">
-                                <rect key="frame" x="232" y="59" width="136" height="20.5"/>
+                                <rect key="frame" x="246" y="59" width="136" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -808,7 +808,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppIcon29x29" translatesAutoresizingMaskIntoConstraints="NO" id="xPb-UU-GqB">
-                                <rect key="frame" x="198" y="55.5" width="29" height="29"/>
+                                <rect key="frame" x="212" y="55.5" width="29" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="G75-es-8L9"/>
                                     <constraint firstAttribute="width" constant="29" id="ZPI-Jk-82s"/>
@@ -821,7 +821,7 @@
                             <constraint firstItem="Bot-Gu-HKB" firstAttribute="centerY" secondItem="xPb-UU-GqB" secondAttribute="centerY" id="Dt1-hJ-ZLo"/>
                             <constraint firstItem="Bot-Gu-HKB" firstAttribute="leading" secondItem="xPb-UU-GqB" secondAttribute="trailing" constant="5" id="V5K-gV-dc2"/>
                             <constraint firstItem="anf-gf-zdc" firstAttribute="top" secondItem="Bot-Gu-HKB" secondAttribute="bottom" constant="50" id="Ywn-7E-7nP"/>
-                            <constraint firstAttribute="centerX" secondItem="Bot-Gu-HKB" secondAttribute="centerX" id="ZoT-zz-XRe"/>
+                            <constraint firstAttribute="centerX" secondItem="Bot-Gu-HKB" secondAttribute="centerX" constant="-14" id="ZoT-zz-XRe"/>
                             <constraint firstItem="vJx-bv-riE" firstAttribute="top" secondItem="0YO-r7-MyQ" secondAttribute="top" id="iKM-ic-C9P"/>
                             <constraint firstItem="Bot-Gu-HKB" firstAttribute="top" secondItem="vJx-bv-riE" secondAttribute="bottom" constant="15" id="p49-7m-J2K"/>
                             <constraint firstItem="vJx-bv-riE" firstAttribute="leading" secondItem="0YO-r7-MyQ" secondAttribute="leading" id="sHD-22-NUz"/>
@@ -872,13 +872,13 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="診断結果 2/3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NEO-kI-kT2">
-                                <rect key="frame" x="251" y="59" width="98" height="20.5"/>
+                                <rect key="frame" x="265" y="59" width="98" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppIcon29x29" translatesAutoresizingMaskIntoConstraints="NO" id="JQh-DD-Drb">
-                                <rect key="frame" x="217" y="55.5" width="29" height="29"/>
+                                <rect key="frame" x="231" y="55.5" width="29" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="L3k-hG-Mx8"/>
                                     <constraint firstAttribute="width" constant="29" id="Nvd-Jk-Qd6"/>
@@ -897,7 +897,7 @@
                             <constraint firstItem="vjo-YL-NSJ" firstAttribute="top" secondItem="9NS-WE-P5c" secondAttribute="top" id="g8k-mD-s2q"/>
                             <constraint firstAttribute="trailing" secondItem="vjo-YL-NSJ" secondAttribute="trailing" id="gwj-S9-Zi4"/>
                             <constraint firstItem="NEO-kI-kT2" firstAttribute="leading" secondItem="JQh-DD-Drb" secondAttribute="trailing" constant="5" id="hvs-0v-tik"/>
-                            <constraint firstAttribute="centerX" secondItem="NEO-kI-kT2" secondAttribute="centerX" id="o5o-wA-XXn"/>
+                            <constraint firstAttribute="centerX" secondItem="NEO-kI-kT2" secondAttribute="centerX" constant="-14" id="o5o-wA-XXn"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -943,13 +943,13 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="診断結果 3/3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7DU-zZ-Cq0">
-                                <rect key="frame" x="251" y="59" width="98" height="20.5"/>
+                                <rect key="frame" x="265" y="59" width="98" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppIcon29x29" translatesAutoresizingMaskIntoConstraints="NO" id="izY-cW-64k">
-                                <rect key="frame" x="212" y="55" width="29" height="29"/>
+                                <rect key="frame" x="226" y="55" width="29" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="29" id="3fK-dF-QhM"/>
                                     <constraint firstAttribute="height" constant="29" id="DQ6-cx-ATX"/>
@@ -960,7 +960,7 @@
                         <constraints>
                             <constraint firstItem="7DU-zZ-Cq0" firstAttribute="centerY" secondItem="izY-cW-64k" secondAttribute="centerY" id="3xN-z4-zNH"/>
                             <constraint firstAttribute="centerX" secondItem="tkn-Nb-yta" secondAttribute="centerX" id="I7X-ZG-PyH"/>
-                            <constraint firstAttribute="centerX" secondItem="7DU-zZ-Cq0" secondAttribute="centerX" id="KVl-nh-klM"/>
+                            <constraint firstAttribute="centerX" secondItem="7DU-zZ-Cq0" secondAttribute="centerX" constant="-14" id="KVl-nh-klM"/>
                             <constraint firstItem="tkn-Nb-yta" firstAttribute="top" secondItem="7DU-zZ-Cq0" secondAttribute="bottom" constant="10" id="NyC-2D-k0q"/>
                             <constraint firstItem="RwN-67-59I" firstAttribute="top" secondItem="hQS-l2-C5b" secondAttribute="top" id="Qcf-LE-es5"/>
                             <constraint firstItem="RwN-67-59I" firstAttribute="leading" secondItem="hQS-l2-C5b" secondAttribute="leading" id="Ybp-ra-Jn2"/>
@@ -995,7 +995,7 @@
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="お疲れ様でした！" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m5Q-nQ-VMx">
-                                <rect key="frame" x="232" y="59" width="136" height="20.5"/>
+                                <rect key="frame" x="246" y="59" width="136" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1029,7 +1029,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppIcon29x29" translatesAutoresizingMaskIntoConstraints="NO" id="fr2-9z-O7o">
-                                <rect key="frame" x="198" y="55" width="29" height="29"/>
+                                <rect key="frame" x="212" y="55" width="29" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="29" id="dBz-kM-fC0"/>
                                     <constraint firstAttribute="height" constant="29" id="ekk-YG-feA"/>
@@ -1038,7 +1038,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="m5Q-nQ-VMx" secondAttribute="centerX" id="5bE-nu-eSz"/>
+                            <constraint firstAttribute="centerX" secondItem="m5Q-nQ-VMx" secondAttribute="centerX" constant="-14" id="5bE-nu-eSz"/>
                             <constraint firstAttribute="centerX" secondItem="BF9-nZ-V6E" secondAttribute="centerX" id="86E-u6-KQJ"/>
                             <constraint firstAttribute="centerX" secondItem="o2D-vt-dMk" secondAttribute="centerX" id="FBt-iA-Etn"/>
                             <constraint firstAttribute="centerX" secondItem="PE1-Uo-ljK" secondAttribute="centerX" id="HGO-Su-0pE"/>
@@ -1116,7 +1116,7 @@
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dr. Pepper" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nmg-g0-sgI">
-                                <rect key="frame" x="259" y="94" width="81.5" height="20.5"/>
+                                <rect key="frame" x="273.5" y="94" width="81.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1149,7 +1149,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppIcon29x29" translatesAutoresizingMaskIntoConstraints="NO" id="Zfm-1J-PsQ">
-                                <rect key="frame" x="225" y="90.5" width="29" height="29"/>
+                                <rect key="frame" x="239.5" y="90.5" width="29" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="29" id="knK-nL-Rcx"/>
                                     <constraint firstAttribute="height" constant="29" id="rrf-55-bqi"/>
@@ -1167,7 +1167,7 @@
                             <constraint firstItem="gIY-Fo-daD" firstAttribute="top" secondItem="Nmg-g0-sgI" secondAttribute="bottom" constant="10" id="IyP-m6-95R"/>
                             <constraint firstItem="Nmg-g0-sgI" firstAttribute="leading" secondItem="Zfm-1J-PsQ" secondAttribute="trailing" constant="5" id="JRX-Q5-Bxb"/>
                             <constraint firstItem="JjU-50-Oph" firstAttribute="top" secondItem="XKW-Ar-cxa" secondAttribute="top" id="QO5-M2-WXo"/>
-                            <constraint firstAttribute="centerX" secondItem="Nmg-g0-sgI" secondAttribute="centerX" id="Qdc-2M-2Gs"/>
+                            <constraint firstAttribute="centerX" secondItem="Nmg-g0-sgI" secondAttribute="centerX" constant="-14" id="Qdc-2M-2Gs"/>
                             <constraint firstAttribute="trailing" secondItem="JjU-50-Oph" secondAttribute="trailing" id="VqU-aY-BfR"/>
                             <constraint firstItem="Nmg-g0-sgI" firstAttribute="centerY" secondItem="Zfm-1J-PsQ" secondAttribute="centerY" id="bPV-Hw-Aje"/>
                             <constraint firstItem="Rm6-pv-hly" firstAttribute="top" secondItem="gIY-Fo-daD" secondAttribute="bottom" constant="10" id="dRc-hl-IvI"/>
