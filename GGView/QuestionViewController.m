@@ -25,13 +25,17 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor colorWithRed:1.0 green:0.8 blue:0.5 alpha:1.0];
     NSDictionary *dict1 = @{@"title":@"あなたの仕事についてうかがいます。", @"question":@"非常にたくさんの仕事をしなければならないですか？"};
-    NSDictionary *dict2 = @{@"title":@"xxx", @"question":@"sss"};
-    NSDictionary *dict3 = @{@"title":@"xxx", @"question":@"sss"};
-    NSDictionary *dict4 = @{@"title":@"xxx", @"question":@"sss"};
-    NSDictionary *dict5 = @{@"title":@"xxx", @"question":@"sss"};
-    NSDictionary *dict6 = @{@"title":@"xxx", @"question":@"sss"};
-    NSDictionary *dict7 = @{@"title":@"xxx", @"question":@"sss"};
-    self.questions = [[NSArray alloc] initWithObjects: dict1, dict2, dict3, dict4, dict5, dict6, dict7, nil];
+    NSDictionary *dict2 = @{@"title":@"あなたの仕事についてうかがいます。", @"question":@"時間内に仕事が処理しきれない"};
+    NSDictionary *dict3 = @{@"title":@"あなたの仕事についてうかがいます。", @"question":@"一生懸命働かなければならない"};
+    NSDictionary *dict4 = @{@"title":@"あなたの仕事についてうかがいます。", @"question":@"かなり注意を集中する必要がある"};
+    NSDictionary *dict5 = @{@"title":@"あなたの仕事についてうかがいます。", @"question":@"高度の知識や技術が必要なむずかしい仕事だ"};
+    NSDictionary *dict6 = @{@"title":@"あなたの仕事についてうかがいます。", @"question":@"勤務時間中はいつも仕事のことを考えていなければならない"};
+    NSDictionary *dict7 = @{@"title":@"あなたの仕事についてうかがいます。", @"question":@"からだを大変よく使う仕事だ"};
+    NSDictionary *dict8 = @{@"title":@"あなたの仕事についてうかがいます。", @"question":@"自分のペースで仕事ができる"};
+    NSDictionary *dict9 = @{@"title":@"あなたの仕事についてうかがいます。", @"question":@"自分で仕事の順番・やり方を決めることができる"};
+    
+    
+    self.questions = [[NSArray alloc] initWithObjects: dict1, dict2, dict3, dict4, dict5, dict6, dict7, dict8, dict9, nil];
     self.answeredCards = [[NSMutableArray alloc] init];
     self.allCards = [[NSMutableArray alloc] init];
     [self loadCards];
