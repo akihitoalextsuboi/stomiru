@@ -3,11 +3,12 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "Bar Refaeli - Attends the inauguration of a Showroom boutique in LA-08.jpg"
+      "filename" : "AppIcon72x72.png"
     },
     {
       "idiom" : "universal",
-      "scale" : "2x"
+      "scale" : "2x",
+      "filename" : "AppIcon72x72@2x.png"
     },
     {
       "idiom" : "universal",
