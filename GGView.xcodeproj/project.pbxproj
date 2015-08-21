@@ -20,6 +20,7 @@
 		D8AA1C961B86FC740058B609 /* ResultPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AA1C951B86FC740058B609 /* ResultPageViewController.m */; };
 		D8AA1C991B871A380058B609 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8AA1C971B871A380058B609 /* Main.storyboard */; };
 		D8AA1C9B1B8777110058B609 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8AA1C9A1B8777110058B609 /* Images.xcassets */; };
+		D8AA1C9E1B8782E00058B609 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AA1C9D1B8782E00058B609 /* WebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		D8AA1C951B86FC740058B609 /* ResultPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultPageViewController.m; sourceTree = "<group>"; };
 		D8AA1C981B871A380058B609 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D8AA1C9A1B8777110058B609 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../../../.Trash/Images.xcassets; sourceTree = "<group>"; };
+		D8AA1C9C1B8782E00058B609 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		D8AA1C9D1B8782E00058B609 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				D8AA1C971B871A380058B609 /* Main.storyboard */,
+				D8AA1C9C1B8782E00058B609 /* WebViewController.h */,
+				D8AA1C9D1B8782E00058B609 /* WebViewController.m */,
 				D8AA1C941B86FC740058B609 /* ResultPageViewController.h */,
 				D8AA1C951B86FC740058B609 /* ResultPageViewController.m */,
 				D8642F881B84C0D700EF8A93 /* AppDelegate.h */,
@@ -250,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8AA1C901B86D47C0058B609 /* Intro2ViewController.m in Sources */,
+				D8AA1C9E1B8782E00058B609 /* WebViewController.m in Sources */,
 				D8642F8D1B84C0D700EF8A93 /* QuestionViewController.m in Sources */,
 				D8AA1C931B86F5EA0058B609 /* Intro6ViewController.m in Sources */,
 				D8AA1C961B86FC740058B609 /* ResultPageViewController.m in Sources */,

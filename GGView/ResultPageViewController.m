@@ -24,8 +24,9 @@
     UIViewController *result2 = [self.storyboard instantiateViewControllerWithIdentifier:@"result2"];
     UIViewController *result3 = [self.storyboard instantiateViewControllerWithIdentifier:@"result3"];
     UIViewController *result4 = [self.storyboard instantiateViewControllerWithIdentifier:@"result4"];
-    
-    resultViewControllers = @[result0, result1, result2, result3, result4];
+    UIViewController *result5 = [self.storyboard instantiateViewControllerWithIdentifier:@"result5"];
+    UIViewController *result6 = [self.storyboard instantiateViewControllerWithIdentifier:@"result6"];
+    resultViewControllers = @[result0, result1, result2, result3, result4, result5, result6];
     [self setViewControllers:@[result0] direction:UIPageViewControllerNavigationDirectionForward
                     animated:YES
                   completion:nil];
