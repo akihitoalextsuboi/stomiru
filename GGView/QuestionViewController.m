@@ -11,11 +11,13 @@
 #import "ResultPageViewController.h"
 
 @interface QuestionViewController () <DraggableViewDelegate>
+@property (weak, nonatomic) IBOutlet UILabel *countLabel;
 - (void)cardSwiped:(UIView *)card;
 @end
 
 @implementation QuestionViewController {
     NSInteger loadedCardsIndex;
+    NSInteger swipedCardsIndex;
 }
 
 //- (void)loadView {
@@ -144,6 +146,11 @@
         ResultPageViewController *resultPageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"resultPageViewController"];
         [self presentViewController:resultPageViewController animated:NO completion:nil];
     }
-   
+    swipedCardsIndex++;
+    NSString *str1 = @"STEP(1)";
+    NSString *str2 = [str1 stringByAppendingFormat:@" %d/17問 全", swipedCardsIndex + 1];
+    NSString *str3 = [str2 stringByAppendingFormat:@"%d/53問", swipedCardsIndex + 1];
+    NSString *labelText = str3;
+    self.countLabel.text = labelText;
 }
 @end

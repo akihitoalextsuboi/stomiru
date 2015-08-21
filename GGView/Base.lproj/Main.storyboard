@@ -33,7 +33,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="かんたんストレス診断" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eSB-Ax-AIg">
-                                <rect key="frame" x="216" y="156" width="170" height="20.5"/>
+                                <rect key="frame" x="216" y="120.5" width="170" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -45,7 +45,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="iTunesArtwork" translatesAutoresizingMaskIntoConstraints="NO" id="iHB-GW-dh7">
-                                <rect key="frame" x="38" y="215" width="512" height="263.5"/>
+                                <rect key="frame" x="38" y="179.5" width="512" height="299"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="4tm-oj-9J6"/>
                                     <constraint firstAttribute="width" secondItem="iHB-GW-dh7" secondAttribute="height" multiplier="5:81" id="Vdf-qq-T2r"/>
@@ -65,7 +65,7 @@
                             <constraint firstAttribute="centerX" secondItem="4KB-G3-Kup" secondAttribute="centerX" id="4e9-H5-ulT"/>
                             <constraint firstAttribute="centerX" secondItem="kke-xp-kbf" secondAttribute="centerX" id="9TZ-Yl-FZO"/>
                             <constraint firstAttribute="centerX" secondItem="eSB-Ax-AIg" secondAttribute="centerX" constant="-1" id="G50-NO-Bqr"/>
-                            <constraint firstItem="eSB-Ax-AIg" firstAttribute="top" secondItem="4KB-G3-Kup" secondAttribute="bottom" constant="86" id="GSg-S3-jKt"/>
+                            <constraint firstItem="eSB-Ax-AIg" firstAttribute="top" secondItem="4KB-G3-Kup" secondAttribute="bottom" constant="50" id="GSg-S3-jKt"/>
                             <constraint firstItem="4KB-G3-Kup" firstAttribute="top" secondItem="oBX-ex-zZP" secondAttribute="bottom" constant="30" id="HvR-ZY-Jrt"/>
                             <constraint firstItem="kke-xp-kbf" firstAttribute="top" secondItem="iHB-GW-dh7" secondAttribute="bottom" constant="50" id="OaA-HM-GUI"/>
                             <constraint firstAttribute="centerX" secondItem="iHB-GW-dh7" secondAttribute="centerX" id="k0Q-xU-KS1"/>
@@ -204,12 +204,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eTM-iv-VZD">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                                <items>
-                                    <navigationItem title="ストミル" id="CF1-fv-unk"/>
-                                </items>
-                            </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="加藤さん！！" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7YN-2C-4wY">
                                 <rect key="frame" x="249" y="164" width="102" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -228,6 +222,12 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eTM-iv-VZD">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="ストミル" id="CF1-fv-unk"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -613,8 +613,8 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STEP 1 残り53問" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LD7-63-Va9">
-                                <rect key="frame" x="442" y="569.5" width="132" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="STEP(1) 1/17問 全1/53問" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LD7-63-Va9">
+                                <rect key="frame" x="379" y="569" width="195" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -653,6 +653,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="countLabel" destination="LD7-63-Va9" id="Lb9-gb-ecW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
