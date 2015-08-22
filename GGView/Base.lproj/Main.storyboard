@@ -60,7 +60,7 @@
                                 </variation>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.99215686274509807" green="0.91764705882352937" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="4KB-G3-Kup" secondAttribute="centerX" id="4e9-H5-ulT"/>
                             <constraint firstAttribute="centerX" secondItem="kke-xp-kbf" secondAttribute="centerX" id="9TZ-Yl-FZO"/>
@@ -128,6 +128,7 @@
                             </textField>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EMc-WA-ARL">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <color key="barTintColor" red="0.99215686270000003" green="0.91764705879999997" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <navigationItem title="ストミル" id="4Lr-lK-ccW"/>
                                 </items>
@@ -149,7 +150,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.99215686270000003" green="0.91764705879999997" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="EMc-WA-ARL" firstAttribute="leading" secondItem="6KN-mF-Whk" secondAttribute="leading" id="2mG-hD-hvz"/>
                             <constraint firstItem="EMc-WA-ARL" firstAttribute="top" secondItem="6KN-mF-Whk" secondAttribute="top" id="5vK-eE-XuX"/>
@@ -224,12 +225,13 @@
                             </button>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eTM-iv-VZD">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <color key="barTintColor" red="0.99215686270000003" green="0.91764705879999997" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <navigationItem title="ストミル" id="CF1-fv-unk"/>
                                 </items>
                             </navigationBar>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.99215686270000003" green="0.91764705879999997" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="iTL-4D-Olb" firstAttribute="top" secondItem="eTM-iv-VZD" secondAttribute="bottom" constant="50" id="6jv-Hw-bIo"/>
                             <constraint firstAttribute="centerX" secondItem="Mt0-fx-tZL" secondAttribute="centerX" id="Eui-66-hv3"/>
@@ -273,6 +275,7 @@
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K7L-Qq-dIW">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <color key="barTintColor" red="0.99215686270000003" green="0.91764705879999997" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <navigationItem title="ストミル" id="tLN-bO-HxW"/>
                                 </items>
@@ -314,7 +317,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.99215686270000003" green="0.91764705879999997" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="K7L-Qq-dIW" firstAttribute="top" secondItem="SmB-7o-Oqn" secondAttribute="top" id="4Pj-AL-CjK"/>
                             <constraint firstItem="K7L-Qq-dIW" firstAttribute="leading" secondItem="SmB-7o-Oqn" secondAttribute="leading" id="LB4-ac-umm"/>
@@ -348,6 +351,7 @@
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RSb-FW-tJZ">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <color key="barTintColor" red="0.99215686270000003" green="0.91764705879999997" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <navigationItem title="ストミル" id="ulc-nj-KRO"/>
                                 </items>
@@ -359,10 +363,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Cq-r8-xwR">
-                                <rect key="frame" x="150" y="164" width="300" height="150"/>
+                                <rect key="frame" x="150" y="164" width="300" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="tur-MK-7NW"/>
+                                    <constraint firstAttribute="height" constant="100" id="tur-MK-7NW"/>
                                     <constraint firstAttribute="width" constant="300" id="wKg-bc-1fk"/>
                                 </constraints>
                                 <string key="text">・この回答結果を事業者に提供してもよろしいでしょうか？
@@ -399,7 +403,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.99215686270000003" green="0.91764705879999997" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="RSb-FW-tJZ" firstAttribute="leading" secondItem="Mes-hI-Duh" secondAttribute="leading" id="7bD-Zf-beF"/>
                             <constraint firstItem="Vqm-Sl-s5W" firstAttribute="leading" secondItem="ozb-PH-PM5" secondAttribute="trailing" constant="5" id="F60-mR-FW8"/>
@@ -442,6 +446,7 @@
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xq6-la-uQS">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <color key="barTintColor" red="0.99215686270000003" green="0.91764705879999997" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <navigationItem title="ストミル" id="wdq-t2-AGn"/>
                                 </items>
@@ -460,7 +465,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.99215686270000003" green="0.91764705879999997" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="xq6-la-uQS" secondAttribute="trailing" id="10V-Jp-NL3"/>
                             <constraint firstItem="IwA-QY-4qT" firstAttribute="top" secondItem="xq6-la-uQS" secondAttribute="bottom" constant="10" id="9nm-pv-ufv"/>
@@ -499,6 +504,7 @@
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ktQ-1Z-X1O">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <color key="barTintColor" red="0.99215686270000003" green="0.91764705879999997" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <navigationItem title="ストミル" id="yCL-uc-qPr"/>
                                 </items>
@@ -510,10 +516,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMg-Kh-EKq">
-                                <rect key="frame" x="150" y="94" width="300" height="300"/>
+                                <rect key="frame" x="150" y="94" width="300" height="150"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="RxX-6z-jys"/>
+                                    <constraint firstAttribute="height" constant="150" id="RxX-6z-jys"/>
                                     <constraint firstAttribute="width" constant="300" id="htb-Yg-4q0"/>
                                 </constraints>
                                 <string key="text">それでは、ストレス診断をはじめます。
@@ -537,7 +543,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.99215686270000003" green="0.91764705879999997" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="6Ve-5Q-qxJ" secondAttribute="centerX" id="H6m-kZ-UQH"/>
                             <constraint firstAttribute="centerX" secondItem="UMg-Kh-EKq" secondAttribute="centerX" id="W63-NV-ZrG"/>
@@ -593,6 +599,7 @@
                             </label>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hSQ-Il-UkW">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <color key="barTintColor" red="0.99215686270000003" green="0.91764705879999997" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <navigationItem title="ストミル" id="Ajn-8M-vh7">
                                         <barButtonItem key="leftBarButtonItem" title="戻る" id="ny3-aS-qiQ">
@@ -683,6 +690,7 @@
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="19A-lb-Pxc">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <color key="barTintColor" red="0.99215686270000003" green="0.91764705879999997" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <navigationItem title="ストミル" id="MJu-t8-Zad"/>
                                 </items>
@@ -725,6 +733,7 @@
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fek-yr-D13">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <color key="barTintColor" red="0.99215686270000003" green="0.91764705879999997" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <navigationItem title="ストミル" id="iuO-7D-KCw"/>
                                 </items>
@@ -762,7 +771,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.99215686270000003" green="0.91764705879999997" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Fek-yr-D13" secondAttribute="trailing" id="0I8-X9-C1M"/>
                             <constraint firstItem="EtW-Ew-uOA" firstAttribute="top" secondItem="6GJ-2Z-OWe" secondAttribute="bottom" constant="10" id="KDB-OE-BFF"/>
@@ -796,6 +805,7 @@
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vJx-bv-riE">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <color key="barTintColor" red="0.99215686270000003" green="0.91764705879999997" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <navigationItem title="ストミル" id="wmy-ii-CWN"/>
                                 </items>
@@ -807,11 +817,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="以上で回答は終了になります。 次のページから結果を見てみましょう！" translatesAutoresizingMaskIntoConstraints="NO" id="anf-gf-zdc">
-                                <rect key="frame" x="150" y="129.5" width="300" height="100"/>
+                                <rect key="frame" x="150" y="129.5" width="300" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="252-0c-5bC"/>
-                                    <constraint firstAttribute="height" constant="100" id="Dtm-D3-zUq"/>
+                                    <constraint firstAttribute="height" constant="50" id="Dtm-D3-zUq"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -824,7 +834,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.99215686270000003" green="0.91764705879999997" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="anf-gf-zdc" secondAttribute="centerX" id="9n9-Wf-JQp"/>
                             <constraint firstItem="Bot-Gu-HKB" firstAttribute="centerY" secondItem="xPb-UU-GqB" secondAttribute="centerY" id="Dt1-hJ-ZLo"/>
@@ -856,6 +866,7 @@
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vjo-YL-NSJ">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <color key="barTintColor" red="0.99215686270000003" green="0.91764705879999997" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <navigationItem title="ストミル" id="RwA-be-Trg"/>
                                 </items>
@@ -891,7 +902,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.99215686270000003" green="0.91764705879999997" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="NEO-kI-kT2" firstAttribute="centerY" secondItem="JQh-DD-Drb" secondAttribute="centerY" id="0ge-KB-LHE"/>
                             <constraint firstItem="Skc-Wi-Bmc" firstAttribute="top" secondItem="vVA-c4-TMI" secondAttribute="bottom" constant="10" id="I0Q-zm-ldU"/>
@@ -925,6 +936,7 @@
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RwN-67-59I">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <color key="barTintColor" red="0.99215686270000003" green="0.91764705879999997" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <navigationItem title="ストミル" id="u8v-om-Hgf"/>
                                 </items>
@@ -960,7 +972,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.99215686270000003" green="0.91764705879999997" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="7DU-zZ-Cq0" firstAttribute="centerY" secondItem="izY-cW-64k" secondAttribute="centerY" id="3xN-z4-zNH"/>
                             <constraint firstAttribute="centerX" secondItem="tkn-Nb-yta" secondAttribute="centerX" id="I7X-ZG-PyH"/>
@@ -994,6 +1006,7 @@
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fGj-xe-yf5">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <color key="barTintColor" red="0.99215686270000003" green="0.91764705879999997" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <navigationItem title="ストミル" id="iMv-Ag-uwt"/>
                                 </items>
@@ -1005,10 +1018,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2D-vt-dMk">
-                                <rect key="frame" x="150" y="89.5" width="300" height="150"/>
+                                <rect key="frame" x="150" y="89.5" width="300" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="KhX-kC-pwi"/>
+                                    <constraint firstAttribute="height" constant="100" id="KhX-kC-pwi"/>
                                     <constraint firstAttribute="width" constant="300" id="PV4-pr-3BR"/>
                                 </constraints>
                                 <string key="text">以上で診断は終了となります。
@@ -1040,7 +1053,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.99215686270000003" green="0.91764705879999997" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="m5Q-nQ-VMx" secondAttribute="centerX" constant="-14" id="5bE-nu-eSz"/>
                             <constraint firstAttribute="centerX" secondItem="BF9-nZ-V6E" secondAttribute="centerX" id="86E-u6-KQJ"/>
@@ -1115,6 +1128,7 @@
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JjU-50-Oph">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <color key="barTintColor" red="0.99215686270000003" green="0.91764705879999997" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <navigationItem title="ストミル" id="kab-VC-VR1"/>
                                 </items>
@@ -1138,10 +1152,10 @@
                                 </state>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rm6-pv-hly">
-                                <rect key="frame" x="150" y="342.5" width="300" height="100"/>
+                                <rect key="frame" x="150" y="342.5" width="300" height="80"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="9Di-0T-Rzf"/>
+                                    <constraint firstAttribute="height" constant="80" id="9Di-0T-Rzf"/>
                                     <constraint firstAttribute="width" constant="300" id="LdL-JO-EqD"/>
                                 </constraints>
                                 <string key="text">こんにちは、加藤さん！
@@ -1160,7 +1174,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.99215686270000003" green="0.91764705879999997" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="JjU-50-Oph" firstAttribute="leading" secondItem="XKW-Ar-cxa" secondAttribute="leading" id="04j-qT-AFa"/>
                             <constraint firstAttribute="centerX" secondItem="gIY-Fo-daD" secondAttribute="centerX" id="3Sl-37-xDb"/>
@@ -1190,7 +1204,7 @@
         <image name="iTunesArtwork" width="512" height="512"/>
         <image name="maasouda" width="179" height="137"/>
         <image name="pepper" width="369" height="208"/>
-        <image name="push" width="606" height="876"/>
+        <image name="push" width="245" height="452"/>
         <image name="result1" width="386" height="345"/>
         <image name="result2" width="384" height="385"/>
         <image name="result3" width="380" height="343"/>

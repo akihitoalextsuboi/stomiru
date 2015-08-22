@@ -34,7 +34,7 @@
     NSLog(@"here");
     pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
     pageControl.currentPageIndicatorTintColor = [UIColor blackColor];
-    pageControl.backgroundColor = [UIColor whiteColor];
+    pageControl.backgroundColor = [UIColor colorWithRed:253.0/255.0 green:234.8/255.0 blue:217.0/255.0 alpha:1.0];
     // Do any additional setup after loading the view.
 }
 
