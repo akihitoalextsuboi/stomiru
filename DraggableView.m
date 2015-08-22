@@ -18,6 +18,7 @@
 
 @implementation DraggableView
 @synthesize delegate;
+@synthesize overlayView;
 
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
@@ -42,6 +43,9 @@
     self.panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(dragged:)];
     [self addGestureRecognizer:self.panGestureRecognizer];
     //[self loadImageAndStyle];
+    overlayView = [[OverlayView alloc] initWithFrame:CGRectMake(self.frame.size.width/2 - 100, 0, 100, 100)];
+    overlayView.alpha = 0;
+    [self addSubview:overlayView];
     
     return self;
 }
@@ -82,6 +86,7 @@
             CGAffineTransform scaleTransform = CGAffineTransformScale(transform, scale, scale);
             self.transform = scaleTransform;
             self.center = CGPointMake(self.originalPoint.x + self.xDistance, self.originalPoint.y + self.yDistance);
+            [self updateOverlay:self.xDistance :self.yDistance];
 
             break;
         };
@@ -116,6 +121,7 @@
                      animations:^{
                          self.center = self.originalPoint;
                          self.transform = CGAffineTransformMakeRotation(0);
+                         overlayView.alpha = 0;
                      }];
 }
 
@@ -156,6 +162,22 @@
                      } completion:^(BOOL complete) {
                          [self removeFromSuperview];
                      }];
+}
+
+- (void)updateOverlay:(CGFloat)distanceX:(CGFloat)distanceY {
+    if (distanceY > distanceX && distanceY > 0) {
+        overlayView.mode = GGOverlayViewModeBottom;
+        overlayView.alpha = MIN(fabsf(distanceY)/100.0, 0.4);
+    } else if (distanceX > distanceY && distanceX > 0) {
+        overlayView.mode = GGOverlayViewModeRight;
+        overlayView.alpha = MIN(fabsf(distanceX)/100.0, 0.4);
+    } else if (-distanceY > -distanceX && distanceY < 0) {
+        overlayView.mode = GGOverlayViewModeTop;
+        overlayView.alpha = MIN(fabsf(distanceY)/100.0, 0.4);
+    } else if (-distanceX > -distanceY && distanceX < 0) {
+        overlayView.mode = GGOverlayViewModeLeft;
+        overlayView.alpha = MIN(fabsf(distanceX)/100.0, 0.4);
+    }
 }
 
 - (void)dealloc {

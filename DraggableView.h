@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
+#import "OverlayView.h"
 @protocol DraggableViewDelegate <NSObject>
 - (void)cardSwiped:(UIView *)card;
 
@@ -16,4 +17,5 @@
 @property (weak) id <DraggableViewDelegate> delegate;
 @property (nonatomic, strong) UILabel *title;
 @property (nonatomic, strong) UILabel *question;
+@property (nonatomic, strong) OverlayView *overlayView;
 @end

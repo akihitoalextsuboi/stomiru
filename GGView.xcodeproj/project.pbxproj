@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D816621D1B883B45008B8A50 /* OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = D816621C1B883B45008B8A50 /* OverlayView.m */; };
 		D8642F871B84C0D700EF8A93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8642F861B84C0D700EF8A93 /* main.m */; };
 		D8642F8A1B84C0D700EF8A93 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8642F891B84C0D700EF8A93 /* AppDelegate.m */; };
 		D8642F8D1B84C0D700EF8A93 /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8642F8C1B84C0D700EF8A93 /* QuestionViewController.m */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D816621B1B883B45008B8A50 /* OverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayView.h; sourceTree = "<group>"; };
+		D816621C1B883B45008B8A50 /* OverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayView.m; sourceTree = "<group>"; };
 		D8642F811B84C0D700EF8A93 /* GGView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GGView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8642F851B84C0D700EF8A93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8642F861B84C0D700EF8A93 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -109,6 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				D8AA1C971B871A380058B609 /* Main.storyboard */,
+				D816621B1B883B45008B8A50 /* OverlayView.h */,
+				D816621C1B883B45008B8A50 /* OverlayView.m */,
 				D8AA1C9C1B8782E00058B609 /* WebViewController.h */,
 				D8AA1C9D1B8782E00058B609 /* WebViewController.m */,
 				D8AA1C941B86FC740058B609 /* ResultPageViewController.h */,
@@ -270,6 +275,7 @@
 				D8642F8D1B84C0D700EF8A93 /* QuestionViewController.m in Sources */,
 				D8AA1CA41B87984C0058B609 /* Intro4ViewController.m in Sources */,
 				D8AA1C931B86F5EA0058B609 /* Intro6ViewController.m in Sources */,
+				D816621D1B883B45008B8A50 /* OverlayView.m in Sources */,
 				D8AA1C961B86FC740058B609 /* ResultPageViewController.m in Sources */,
 				D8642F8A1B84C0D700EF8A93 /* AppDelegate.m in Sources */,
 				D8642FAC1B84C0EC00EF8A93 /* DraggableView.m in Sources */,
