@@ -167,16 +167,16 @@
 - (void)updateOverlay:(CGFloat)distanceX:(CGFloat)distanceY {
     if (distanceY > distanceX && distanceY > 0) {
         overlayView.mode = GGOverlayViewModeBottom;
-        overlayView.alpha = MIN(fabsf(distanceY)/100.0, 0.4);
+        overlayView.alpha = MIN(fabsf(distanceY)/100.0, 0.7);
     } else if (distanceX > distanceY && distanceX > 0) {
         overlayView.mode = GGOverlayViewModeRight;
-        overlayView.alpha = MIN(fabsf(distanceX)/100.0, 0.4);
+        overlayView.alpha = MIN(fabsf(distanceX)/100.0, 0.7);
     } else if (-distanceY > -distanceX && distanceY < 0) {
         overlayView.mode = GGOverlayViewModeTop;
-        overlayView.alpha = MIN(fabsf(distanceY)/100.0, 0.4);
+        overlayView.alpha = MIN(fabsf(distanceY)/100.0, 0.7);
     } else if (-distanceX > -distanceY && distanceX < 0) {
         overlayView.mode = GGOverlayViewModeLeft;
-        overlayView.alpha = MIN(fabsf(distanceX)/100.0, 0.4);
+        overlayView.alpha = MIN(fabsf(distanceX)/100.0, 0.7);
     }
 }
 

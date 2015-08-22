@@ -743,14 +743,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MWd-hy-OSB">
-                                <rect key="frame" x="150" y="89.5" width="300" height="80"/>
+                                <rect key="frame" x="150" y="89.5" width="300" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="9hI-zg-dhJ"/>
-                                    <constraint firstAttribute="height" constant="80" id="Dkn-3q-Kge"/>
+                                    <constraint firstAttribute="height" constant="100" id="Dkn-3q-Kge"/>
                                 </constraints>
-                                <string key="text">あなたのストレス状態は高くありませんが、ストレスの原因となる因子が少しあるようです。
-面接指導はありません。
+                                <string key="text">あなたはストレスが高い状況にいると疑われます。ストレスによって心や体が辛いと感じていませんか？特にストレスの原因となる因子が多いことが心身の不調に繋がっていると思われます。
 </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -862,25 +861,12 @@
                                 </items>
                             </navigationBar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="result2" translatesAutoresizingMaskIntoConstraints="NO" id="vVA-c4-TMI">
-                                <rect key="frame" x="150.5" y="290" width="300" height="300"/>
+                                <rect key="frame" x="150" y="290" width="300" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="Bkx-GG-owR"/>
                                     <constraint firstAttribute="height" constant="300" id="IcQ-nY-lrO"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dGN-wx-kuF">
-                                <rect key="frame" x="150" y="89.5" width="300" height="80"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="0ES-na-nJJ"/>
-                                    <constraint firstAttribute="width" constant="300" id="f7C-9a-jUK"/>
-                                </constraints>
-                                <string key="text">あなたのストレス状態は高くありませんが、ストレスの原因となる因子が少しあるようです。
-面接指導はありません。
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="診断結果 2/3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NEO-kI-kT2">
                                 <rect key="frame" x="265" y="59" width="98" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -888,12 +874,22 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppIcon29x29" translatesAutoresizingMaskIntoConstraints="NO" id="JQh-DD-Drb">
-                                <rect key="frame" x="231" y="55.5" width="29" height="29"/>
+                                <rect key="frame" x="231" y="55" width="29" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="L3k-hG-Mx8"/>
                                     <constraint firstAttribute="width" constant="29" id="Nvd-Jk-Qd6"/>
                                 </constraints>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="あなたのストレス原因となるもっとも大きな要因は仕事の量が多く心理的な仕事の負担が大きいことや仕事のコントロールがうまくいかないことであると考えられます。" translatesAutoresizingMaskIntoConstraints="NO" id="dGN-wx-kuF">
+                                <rect key="frame" x="150" y="89.5" width="300" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="0ES-na-nJJ"/>
+                                    <constraint firstAttribute="width" constant="300" id="f7C-9a-jUK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -940,15 +936,13 @@
                                     <constraint firstAttribute="height" constant="300" id="jHM-Ms-rlC"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tkn-Nb-yta">
-                                <rect key="frame" x="150" y="89" width="300" height="80"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="あなたは、ストレスを受けたとき、それを解消する場所を持っていないそうです。ストレスを緩衝する因子を持っていないと、小さいストレスでも心身反応が出てしまう恐れがあります。" translatesAutoresizingMaskIntoConstraints="NO" id="tkn-Nb-yta">
+                                <rect key="frame" x="150" y="89" width="300" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="0Cx-bl-hmA"/>
+                                    <constraint firstAttribute="height" constant="100" id="0Cx-bl-hmA"/>
                                     <constraint firstAttribute="width" constant="300" id="Z6g-IB-V0L"/>
                                 </constraints>
-                                <string key="text">あなたのストレス状態は高くありませんが、ストレスの原因となる因子が少しあるようです。
-面接指導はありません。</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
