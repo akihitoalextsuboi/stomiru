@@ -20,10 +20,12 @@
 		D8AA1C931B86F5EA0058B609 /* Intro6ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AA1C921B86F5EA0058B609 /* Intro6ViewController.m */; };
 		D8AA1C961B86FC740058B609 /* ResultPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AA1C951B86FC740058B609 /* ResultPageViewController.m */; };
 		D8AA1C991B871A380058B609 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8AA1C971B871A380058B609 /* Main.storyboard */; };
-		D8AA1C9B1B8777110058B609 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8AA1C9A1B8777110058B609 /* Images.xcassets */; };
 		D8AA1C9E1B8782E00058B609 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AA1C9D1B8782E00058B609 /* WebViewController.m */; };
 		D8AA1CA11B8798380058B609 /* Intro3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AA1CA01B8798380058B609 /* Intro3ViewController.m */; };
 		D8AA1CA41B87984C0058B609 /* Intro4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AA1CA31B87984C0058B609 /* Intro4ViewController.m */; };
+		D8ABA28A1B88C00B0098303A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8ABA2891B88C00B0098303A /* Images.xcassets */; };
+		D8ABA28C1B88C1310098303A /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8ABA28B1B88C1310098303A /* Images-2.xcassets */; };
+		D8ABA28E1B88C1420098303A /* Images-3.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8ABA28D1B88C1420098303A /* Images-3.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,13 +65,15 @@
 		D8AA1C941B86FC740058B609 /* ResultPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultPageViewController.h; sourceTree = "<group>"; };
 		D8AA1C951B86FC740058B609 /* ResultPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultPageViewController.m; sourceTree = "<group>"; };
 		D8AA1C981B871A380058B609 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D8AA1C9A1B8777110058B609 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../../../.Trash/Images.xcassets; sourceTree = "<group>"; };
 		D8AA1C9C1B8782E00058B609 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		D8AA1C9D1B8782E00058B609 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		D8AA1C9F1B8798380058B609 /* Intro3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Intro3ViewController.h; sourceTree = "<group>"; };
 		D8AA1CA01B8798380058B609 /* Intro3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Intro3ViewController.m; sourceTree = "<group>"; };
 		D8AA1CA21B87984C0058B609 /* Intro4ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Intro4ViewController.h; sourceTree = "<group>"; };
 		D8AA1CA31B87984C0058B609 /* Intro4ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Intro4ViewController.m; sourceTree = "<group>"; };
+		D8ABA2891B88C00B0098303A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
+		D8ABA28B1B88C1310098303A /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-2.xcassets"; sourceTree = "<group>"; };
+		D8ABA28D1B88C1420098303A /* Images-3.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-3.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				D8AA1C971B871A380058B609 /* Main.storyboard */,
+				D8ABA2891B88C00B0098303A /* Images.xcassets */,
 				D816621B1B883B45008B8A50 /* OverlayView.h */,
 				D816621C1B883B45008B8A50 /* OverlayView.m */,
 				D8AA1C9C1B8782E00058B609 /* WebViewController.h */,
@@ -136,8 +141,9 @@
 				D8AA1C8F1B86D47C0058B609 /* Intro2ViewController.m */,
 				D8AA1C881B86C2850058B609 /* IntroPageViewController.h */,
 				D8AA1C891B86C2850058B609 /* IntroPageViewController.m */,
-				D8AA1C9A1B8777110058B609 /* Images.xcassets */,
 				D8642F931B84C0D700EF8A93 /* LaunchScreen.xib */,
+				D8ABA28B1B88C1310098303A /* Images-2.xcassets */,
+				D8ABA28D1B88C1420098303A /* Images-3.xcassets */,
 				D8642F841B84C0D700EF8A93 /* Supporting Files */,
 			);
 			path = GGView;
@@ -249,8 +255,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8AA1C9B1B8777110058B609 /* Images.xcassets in Resources */,
 				D8AA1C991B871A380058B609 /* Main.storyboard in Resources */,
+				D8ABA28A1B88C00B0098303A /* Images.xcassets in Resources */,
+				D8ABA28E1B88C1420098303A /* Images-3.xcassets in Resources */,
+				D8ABA28C1B88C1310098303A /* Images-2.xcassets in Resources */,
 				D8642F951B84C0D700EF8A93 /* LaunchScreen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +417,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = GGView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -419,6 +428,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = GGView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
