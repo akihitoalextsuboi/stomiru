@@ -111,7 +111,7 @@
     if ( count > 0 ) {
         NSInteger cardsToLoad = count > 4 ? 4 : count;
         for (int i = 0; i < count; i++) {
-            DraggableView *draggableView = [[DraggableView alloc] initWithFrame:CGRectMake(20, 60, 280, 320)];
+            DraggableView *draggableView = [[DraggableView alloc] initWithFrame:CGRectMake(20, 60, 280, 300)];
             draggableView.title.text = [self.questions objectAtIndex:i][@"title"];
             draggableView.question.text = [self.questions objectAtIndex:i][@"question"];
             draggableView.delegate = self;

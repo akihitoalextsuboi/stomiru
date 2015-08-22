@@ -577,34 +577,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AAX-4e-Zl6">
-                                <rect key="frame" x="277" y="460" width="45" height="30"/>
-                                <state key="normal" title="そうだ">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sih-li-ujc">
-                                <rect key="frame" x="262" y="520" width="75" height="30"/>
-                                <state key="normal" title="ややちがう">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3q9-Pc-jMR">
-                                <rect key="frame" x="46" y="490" width="45" height="30"/>
-                                <state key="normal" title="ちがう">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s8O-Vc-0PU">
-                                <rect key="frame" x="479" y="490" width="75" height="30"/>
-                                <state key="normal" title="まあそうだ">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3XU-Tx-wWu">
                                 <rect key="frame" x="0.0" y="0.0" width="0.0" height="44"/>
                                 <items>
@@ -613,8 +585,8 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="STEP(1) 1/17問 全1/53問" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LD7-63-Va9">
-                                <rect key="frame" x="379" y="569" width="195" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STEP(1) 1/17問 全1/53問" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LD7-63-Va9">
+                                <rect key="frame" x="383.5" y="569" width="190.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -629,22 +601,50 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chigau" translatesAutoresizingMaskIntoConstraints="NO" id="gpQ-gv-hCR">
+                                <rect key="frame" x="26" y="461" width="80" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="API-IX-6R7"/>
+                                    <constraint firstAttribute="height" constant="64" id="ZoN-2c-vlp"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yayachigau" translatesAutoresizingMaskIntoConstraints="NO" id="rbK-fb-gI2">
+                                <rect key="frame" x="270" y="493" width="60" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="82" id="Add-bd-LBy"/>
+                                    <constraint firstAttribute="width" constant="60" id="cga-rW-Zdt"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="maasouda" translatesAutoresizingMaskIntoConstraints="NO" id="NFO-mr-AUa">
+                                <rect key="frame" x="494" y="455" width="80" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="5ky-U7-njZ"/>
+                                    <constraint firstAttribute="height" constant="64" id="eNx-jE-OKl"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="souda" translatesAutoresizingMaskIntoConstraints="NO" id="6Ls-kN-eNI">
+                                <rect key="frame" x="270" y="403" width="60" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="RXm-Tr-DGT"/>
+                                    <constraint firstAttribute="width" constant="60" id="WeU-z3-mRn"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="hSQ-Il-UkW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="77s-hI-0PN"/>
-                            <constraint firstItem="Sih-li-ujc" firstAttribute="top" secondItem="AAX-4e-Zl6" secondAttribute="bottom" constant="30" id="9zX-yn-LGb"/>
+                            <constraint firstAttribute="centerX" secondItem="6Ls-kN-eNI" secondAttribute="centerX" id="CQm-Ne-Al3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="LD7-63-Va9" secondAttribute="trailing" constant="10" id="J11-80-1hR"/>
-                            <constraint firstAttribute="centerX" secondItem="AAX-4e-Zl6" secondAttribute="centerX" id="Uut-74-jiP"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3q9-Pc-jMR" secondAttribute="bottom" constant="80" id="X1w-1E-GPC"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gpQ-gv-hCR" secondAttribute="bottom" constant="75" id="Q7d-eW-2Pd"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LD7-63-Va9" secondAttribute="bottom" constant="10" id="bML-xX-N4W"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="s8O-Vc-0PU" secondAttribute="trailing" constant="30" id="lMt-Bj-EFn"/>
-                            <constraint firstAttribute="centerX" secondItem="Sih-li-ujc" secondAttribute="centerX" id="lew-rb-JWC"/>
+                            <constraint firstItem="gpQ-gv-hCR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="gN5-Ym-tXx"/>
+                            <constraint firstItem="rbK-fb-gI2" firstAttribute="top" secondItem="6Ls-kN-eNI" secondAttribute="bottom" id="gmy-md-Laa"/>
+                            <constraint firstAttribute="centerX" secondItem="rbK-fb-gI2" secondAttribute="centerX" id="jb8-xq-dTQ"/>
                             <constraint firstItem="hSQ-Il-UkW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="n07-Zm-NvM"/>
-                            <constraint firstItem="3q9-Pc-jMR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="n8t-YM-RhR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NFO-mr-AUa" secondAttribute="trailing" constant="10" id="uGS-oF-q5L"/>
+                            <constraint firstItem="LD7-63-Va9" firstAttribute="top" secondItem="NFO-mr-AUa" secondAttribute="bottom" constant="50" id="vpW-Ga-oKK"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rbK-fb-gI2" secondAttribute="bottom" constant="25" id="wSi-nb-COl"/>
                             <constraint firstAttribute="trailing" secondItem="hSQ-Il-UkW" secondAttribute="trailing" id="waF-bR-D7a"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="s8O-Vc-0PU" secondAttribute="bottom" constant="80" id="xdC-qh-SWf"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Sih-li-ujc" secondAttribute="bottom" constant="50" id="yWz-Su-TF7"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -1192,12 +1192,16 @@
     </scenes>
     <resources>
         <image name="AppIcon29x29" width="29" height="29"/>
+        <image name="chigau" width="164" height="136"/>
         <image name="iTunesArtwork" width="512" height="512"/>
+        <image name="maasouda" width="179" height="137"/>
         <image name="pepper" width="369" height="208"/>
         <image name="push" width="606" height="876"/>
         <image name="result1" width="386" height="345"/>
         <image name="result2" width="384" height="385"/>
         <image name="result3" width="380" height="343"/>
+        <image name="souda" width="137" height="186"/>
         <image name="tutorial" width="514" height="1056"/>
+        <image name="yayachigau" width="137" height="179"/>
     </resources>
 </document>
