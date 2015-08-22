@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1Y0-P9-bA6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8173.3" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1Y0-P9-bA6">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -588,7 +589,7 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STEP(1) 1/17問 全1/53問" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LD7-63-Va9">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="STEP(1) 1/17問 全1/53問" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LD7-63-Va9">
                                 <rect key="frame" x="383.5" y="569" width="190.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -605,7 +606,7 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chigau" translatesAutoresizingMaskIntoConstraints="NO" id="gpQ-gv-hCR">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="chigau" translatesAutoresizingMaskIntoConstraints="NO" id="gpQ-gv-hCR">
                                 <rect key="frame" x="26" y="461" width="80" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="API-IX-6R7"/>
@@ -619,7 +620,7 @@
                                     <constraint firstAttribute="width" constant="60" id="cga-rW-Zdt"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="maasouda" translatesAutoresizingMaskIntoConstraints="NO" id="NFO-mr-AUa">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="maasouda" translatesAutoresizingMaskIntoConstraints="NO" id="NFO-mr-AUa">
                                 <rect key="frame" x="494" y="455" width="80" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="5ky-U7-njZ"/>
@@ -742,7 +743,7 @@
                                     <constraint firstAttribute="width" constant="300" id="k5l-NB-jo8"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="診断結果 1/3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xWc-vD-QET">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="診断結果 1/3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xWc-vD-QET">
                                 <rect key="frame" x="265" y="59" width="98" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -760,7 +761,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppIcon29x29" translatesAutoresizingMaskIntoConstraints="NO" id="O0P-P4-9SY">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="AppIcon29x29" translatesAutoresizingMaskIntoConstraints="NO" id="O0P-P4-9SY">
                                 <rect key="frame" x="231" y="55" width="29" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="29" id="S5c-7j-FKX"/>
@@ -1201,7 +1202,7 @@
         <image name="iTunesArtwork" width="512" height="512"/>
         <image name="maasouda" width="179" height="137"/>
         <image name="pepper" width="369" height="208"/>
-        <image name="push" width="606" height="876"/>
+        <image name="push" width="245" height="452"/>
         <image name="result1" width="386" height="345"/>
         <image name="result2" width="384" height="385"/>
         <image name="result3" width="380" height="343"/>
