@@ -138,9 +138,6 @@
                                 <state key="normal" title="認証して次へ">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="zfw-1g-tmE" kind="show" id="9Ua-Wa-MoS"/>
-                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppIcon29x29" translatesAutoresizingMaskIntoConstraints="NO" id="XWS-xh-4bY">
                                 <rect key="frame" x="220.5" y="90" width="29" height="29"/>
