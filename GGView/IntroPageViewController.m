@@ -9,12 +9,12 @@
 #import "IntroPageViewController.h"
 #import "QuestionViewController.h"
 
-@interface IntroPageViewController () <UIPageViewControllerDataSource, UIPageViewControllerDelegate>
-
+@interface IntroPageViewController () <UIPageViewControllerDataSource, UIPageViewControllerDelegate, Intro2ViewControllerDelegate>
+@property (nonatomic, strong) NSArray *introViewControllers;
 @end
 
 @implementation IntroPageViewController {
-    NSArray *introViewControllers;
+//    NSArray *introViewControllers;
     QuestionViewController *questionViewController;
 }
 
@@ -23,13 +23,17 @@
     self.delegate = self;
     self.dataSource = self;
     UIViewController *intro1 = [self.storyboard instantiateViewControllerWithIdentifier:@"intro1"];
-    UIViewController *intro2 = [self.storyboard instantiateViewControllerWithIdentifier:@"intro2"];
-    UIViewController *intro3 = [self.storyboard instantiateViewControllerWithIdentifier:@"intro3"];
+    Intro2ViewController *intro2 = [self.storyboard instantiateViewControllerWithIdentifier:@"intro2"];
+    Intro3ViewController *intro3 = [self.storyboard instantiateViewControllerWithIdentifier:@"intro3"];
     UIViewController *intro4 = [self.storyboard instantiateViewControllerWithIdentifier:@"intro4"];
     UIViewController *intro5 = [self.storyboard instantiateViewControllerWithIdentifier:@"intro5"];
     UIViewController *intro6 = [self.storyboard instantiateViewControllerWithIdentifier:@"intro6"];
-    UIViewController *intro7 = [self.storyboard instantiateViewControllerWithIdentifier:@"intro7"];
-    introViewControllers = @[intro1, intro2, intro3, intro4, intro5, intro7, intro6];
+    UIViewController *introLast = [self.storyboard instantiateViewControllerWithIdentifier:@"introLast"];
+    intro2.delegate = self;
+
+    
+    self.introViewControllers = @[intro1, intro2, intro3, intro4, intro5, intro6, introLast];
+
     [self setViewControllers:@[intro1] direction:UIPageViewControllerNavigationDirectionForward
                     animated:YES
                   completion:nil];
@@ -37,8 +41,21 @@
     pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
     pageControl.currentPageIndicatorTintColor = [UIColor blackColor];
     pageControl.backgroundColor = [UIColor colorWithRed:253.0/255.0 green:234.8/255.0 blue:217.0/255.0 alpha:1.0];
+
        // Do any additional setup after loading the view.
 }
+
+//- (NSArray *)initViewControllers {
+//    UIViewController *intro1 = [self.storyboard instantiateViewControllerWithIdentifier:@"intro1"];
+//    Intro2ViewController *intro2 = [self.storyboard instantiateViewControllerWithIdentifier:@"intro2"];
+//    Intro3ViewController *intro3 = [self.storyboard instantiateViewControllerWithIdentifier:@"intro3"];
+//    UIViewController *intro4 = [self.storyboard instantiateViewControllerWithIdentifier:@"intro4"];
+//    UIViewController *intro5 = [self.storyboard instantiateViewControllerWithIdentifier:@"intro5"];
+//    UIViewController *intro6 = [self.storyboard instantiateViewControllerWithIdentifier:@"intro6"];
+//    UIViewController *introLast = [self.storyboard instantiateViewControllerWithIdentifier:@"introLast"];
+//    
+//    return @[intro1, intro2, intro3, intro4, intro5, intro6, introLast];
+//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -46,28 +63,28 @@
 }
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController {
-    NSInteger currentIndex = [introViewControllers indexOfObject:viewController];
+    NSInteger currentIndex = [self.introViewControllers indexOfObject:viewController];
     --currentIndex;
     if (currentIndex < 0)
     {
         return nil;
     }
-    currentIndex = currentIndex % introViewControllers.count;
-    return [introViewControllers objectAtIndex:currentIndex];
+    currentIndex = currentIndex % self.introViewControllers.count;
+    return [self.introViewControllers objectAtIndex:currentIndex];
 }
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController  viewControllerAfterViewController:(UIViewController *)viewController {
-    NSInteger currentIndex = [introViewControllers indexOfObject:viewController];
+    NSInteger currentIndex = [self.introViewControllers indexOfObject:viewController];
     ++currentIndex;
-    if (currentIndex >= [introViewControllers count]) {
+    if (currentIndex >= [self.introViewControllers count]) {
         return nil;
     }
-    currentIndex = currentIndex % introViewControllers.count;
-    return [introViewControllers objectAtIndex:currentIndex];
+    currentIndex = currentIndex % self.introViewControllers.count;
+    return [self.introViewControllers objectAtIndex:currentIndex];
 }
 
 - (NSInteger)presentationCountForPageViewController:(UIPageViewController *)pageViewController {
-    return [introViewControllers count];
+    return [self.introViewControllers count];
 }
 
 - (NSInteger)presentationIndexForPageViewController:(UIPageViewController *)pageViewController {
@@ -75,6 +92,14 @@
 }
 
 
+- (void)goNextPage {
+    NSLog(@"goNextPage called");
+    UIViewController *intro3 = [self.storyboard instantiateViewControllerWithIdentifier:@"intro3"];
+    [self setViewControllers:@[intro3] direction:UIPageViewControllerNavigationDirectionForward
+                    animated:YES
+                  completion:nil];
+
+}
 /*
 #pragma mark - Navigation
 

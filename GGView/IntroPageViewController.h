@@ -7,6 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Intro2ViewController.h"
+#import "Intro3ViewController.h"
+#import "Intro4ViewController.h"
+#import "Intro5ViewController.h"
+
 
 @interface IntroPageViewController : UIPageViewController
 

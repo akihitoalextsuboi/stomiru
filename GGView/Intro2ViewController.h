@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Intro2ViewController : UIViewController
+@protocol Intro2ViewControllerDelegate <NSObject>
 
+- (void)goNextPage;
+
+@end
+
+@interface Intro2ViewController : UIViewController
+@property (nonatomic, retain) id<Intro2ViewControllerDelegate> delegate;
 @end

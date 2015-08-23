@@ -15,9 +15,10 @@
 		D8642FA11B84C0D700EF8A93 /* GGViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D8642FA01B84C0D700EF8A93 /* GGViewTests.m */; };
 		D8642FAC1B84C0EC00EF8A93 /* DraggableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8642FAB1B84C0EC00EF8A93 /* DraggableView.m */; };
 		D8642FB21B851F4600EF8A93 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8642FB11B851F4600EF8A93 /* ViewController.m */; };
+		D86832DE1B89B617000B1139 /* Intro5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D86832DC1B89B617000B1139 /* Intro5ViewController.m */; };
 		D8AA1C8A1B86C2850058B609 /* IntroPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AA1C891B86C2850058B609 /* IntroPageViewController.m */; };
 		D8AA1C901B86D47C0058B609 /* Intro2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AA1C8F1B86D47C0058B609 /* Intro2ViewController.m */; };
-		D8AA1C931B86F5EA0058B609 /* Intro6ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AA1C921B86F5EA0058B609 /* Intro6ViewController.m */; };
+		D8AA1C931B86F5EA0058B609 /* IntroLastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AA1C921B86F5EA0058B609 /* IntroLastViewController.m */; };
 		D8AA1C961B86FC740058B609 /* ResultPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AA1C951B86FC740058B609 /* ResultPageViewController.m */; };
 		D8AA1C991B871A380058B609 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8AA1C971B871A380058B609 /* Main.storyboard */; };
 		D8AA1C9E1B8782E00058B609 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AA1C9D1B8782E00058B609 /* WebViewController.m */; };
@@ -56,12 +57,14 @@
 		D8642FAB1B84C0EC00EF8A93 /* DraggableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DraggableView.m; path = ../DraggableView.m; sourceTree = "<group>"; };
 		D8642FB01B851F4600EF8A93 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D8642FB11B851F4600EF8A93 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D86832DC1B89B617000B1139 /* Intro5ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Intro5ViewController.m; sourceTree = "<group>"; };
+		D86832DD1B89B617000B1139 /* Intro5ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Intro5ViewController.h; sourceTree = "<group>"; };
 		D8AA1C881B86C2850058B609 /* IntroPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroPageViewController.h; sourceTree = "<group>"; };
 		D8AA1C891B86C2850058B609 /* IntroPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroPageViewController.m; sourceTree = "<group>"; };
 		D8AA1C8E1B86D47C0058B609 /* Intro2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Intro2ViewController.h; sourceTree = "<group>"; };
 		D8AA1C8F1B86D47C0058B609 /* Intro2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Intro2ViewController.m; sourceTree = "<group>"; };
-		D8AA1C911B86F5EA0058B609 /* Intro6ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Intro6ViewController.h; sourceTree = "<group>"; };
-		D8AA1C921B86F5EA0058B609 /* Intro6ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Intro6ViewController.m; sourceTree = "<group>"; };
+		D8AA1C911B86F5EA0058B609 /* IntroLastViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroLastViewController.h; sourceTree = "<group>"; };
+		D8AA1C921B86F5EA0058B609 /* IntroLastViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroLastViewController.m; sourceTree = "<group>"; };
 		D8AA1C941B86FC740058B609 /* ResultPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultPageViewController.h; sourceTree = "<group>"; };
 		D8AA1C951B86FC740058B609 /* ResultPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultPageViewController.m; sourceTree = "<group>"; };
 		D8AA1C981B871A380058B609 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -131,12 +134,14 @@
 				D8642FB11B851F4600EF8A93 /* ViewController.m */,
 				D8642FAA1B84C0EC00EF8A93 /* DraggableView.h */,
 				D8642FAB1B84C0EC00EF8A93 /* DraggableView.m */,
-				D8AA1C911B86F5EA0058B609 /* Intro6ViewController.h */,
+				D8AA1C911B86F5EA0058B609 /* IntroLastViewController.h */,
+				D8AA1C921B86F5EA0058B609 /* IntroLastViewController.m */,
+				D86832DC1B89B617000B1139 /* Intro5ViewController.m */,
+				D86832DD1B89B617000B1139 /* Intro5ViewController.h */,
 				D8AA1C9F1B8798380058B609 /* Intro3ViewController.h */,
 				D8AA1CA01B8798380058B609 /* Intro3ViewController.m */,
 				D8AA1CA21B87984C0058B609 /* Intro4ViewController.h */,
 				D8AA1CA31B87984C0058B609 /* Intro4ViewController.m */,
-				D8AA1C921B86F5EA0058B609 /* Intro6ViewController.m */,
 				D8AA1C8E1B86D47C0058B609 /* Intro2ViewController.h */,
 				D8AA1C8F1B86D47C0058B609 /* Intro2ViewController.m */,
 				D8AA1C881B86C2850058B609 /* IntroPageViewController.h */,
@@ -283,10 +288,11 @@
 				D8AA1CA11B8798380058B609 /* Intro3ViewController.m in Sources */,
 				D8642F8D1B84C0D700EF8A93 /* QuestionViewController.m in Sources */,
 				D8AA1CA41B87984C0058B609 /* Intro4ViewController.m in Sources */,
-				D8AA1C931B86F5EA0058B609 /* Intro6ViewController.m in Sources */,
+				D8AA1C931B86F5EA0058B609 /* IntroLastViewController.m in Sources */,
 				D816621D1B883B45008B8A50 /* OverlayView.m in Sources */,
 				D8AA1C961B86FC740058B609 /* ResultPageViewController.m in Sources */,
 				D8642F8A1B84C0D700EF8A93 /* AppDelegate.m in Sources */,
+				D86832DE1B89B617000B1139 /* Intro5ViewController.m in Sources */,
 				D8642FAC1B84C0EC00EF8A93 /* DraggableView.m in Sources */,
 				D8642F871B84C0D700EF8A93 /* main.m in Sources */,
 				D8642FB21B851F4600EF8A93 /* ViewController.m in Sources */,

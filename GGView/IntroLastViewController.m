@@ -6,14 +6,14 @@
 //  Copyright (c) 2015年 rainbowaffro. All rights reserved.
 //
 
-#import "Intro6ViewController.h"
+#import "IntroLastViewController.h"
 #import "QuestionViewController.h"
 
-@interface Intro6ViewController ()
+@interface IntroLastViewController ()
 
 @end
 
-@implementation Intro6ViewController
+@implementation IntroLastViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

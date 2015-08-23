@@ -13,6 +13,7 @@
 @end
 
 @implementation Intro2ViewController
+@synthesize delegate;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -33,6 +34,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)goNext:(id)sender {
+    [self.delegate goNextPage];
+}
 
     
 /*

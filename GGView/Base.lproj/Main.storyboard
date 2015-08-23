@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8173.3" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1Y0-P9-bA6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1Y0-P9-bA6">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -116,8 +115,9 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="GhW-sa-6du"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="パスワードの確認" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EGE-QF-ZIU">
                                 <rect key="frame" x="200" y="284" width="200" height="30"/>
@@ -125,7 +125,7 @@
                                     <constraint firstAttribute="width" constant="200" id="M7W-Jx-ldx"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EMc-WA-ARL">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
@@ -140,7 +140,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="zfw-1g-tmE" kind="show" id="DZg-lw-ShG"/>
+                                    <action selector="goNext:" destination="Gf4-zt-YFn" eventType="touchUpInside" id="bpu-Ks-rpy"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppIcon29x29" translatesAutoresizingMaskIntoConstraints="NO" id="XWS-xh-4bY">
@@ -188,10 +188,10 @@
             </objects>
             <point key="canvasLocation" x="474" y="-117"/>
         </scene>
-        <!--View Controller-->
+        <!--Intro3 View Controller-->
         <scene sceneID="uBH-au-Tck">
             <objects>
-                <viewController storyboardIdentifier="intro3" id="zfw-1g-tmE" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="intro3" id="zfw-1g-tmE" customClass="Intro3ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xJm-O7-LYF"/>
                         <viewControllerLayoutGuide type="bottom" id="Kmf-AB-Nwf"/>
@@ -217,6 +217,9 @@
                                 <state key="normal" title="ストレス診断をはじめる">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="goNext:" destination="zfw-1g-tmE" eventType="touchUpInside" id="Htn-60-YEr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mt0-fx-tZL">
                                 <rect key="frame" x="248" y="520" width="105" height="30"/>
@@ -262,10 +265,10 @@
             </objects>
             <point key="canvasLocation" x="1124" y="-111"/>
         </scene>
-        <!--View Controller-->
+        <!--Intro4 View Controller-->
         <scene sceneID="zla-40-DtE">
             <objects>
-                <viewController storyboardIdentifier="intro4" id="XbN-Ei-c5Y" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="intro4" id="XbN-Ei-c5Y" customClass="Intro4ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kIt-kU-8Td"/>
                         <viewControllerLayoutGuide type="bottom" id="0Np-zO-1ON"/>
@@ -309,6 +312,9 @@
                                 <state key="normal" title="確認して次へ">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="goNext:" destination="XbN-Ei-c5Y" eventType="touchUpInside" id="VI7-Ul-ENN"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppIcon29x29" translatesAutoresizingMaskIntoConstraints="NO" id="FYx-tn-JIV">
                                 <rect key="frame" x="246" y="90.5" width="29" height="29"/>
@@ -338,10 +344,10 @@
             </objects>
             <point key="canvasLocation" x="1748" y="-135"/>
         </scene>
-        <!--View Controller-->
+        <!--Intro5 View Controller-->
         <scene sceneID="JqB-dS-yD8">
             <objects>
-                <viewController storyboardIdentifier="intro5" id="dH3-oY-Rdw" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="intro5" id="dH3-oY-Rdw" customClass="Intro5ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JhO-eZ-x2l"/>
                         <viewControllerLayoutGuide type="bottom" id="xwA-3d-Nvk"/>
@@ -433,10 +439,10 @@
             </objects>
             <point key="canvasLocation" x="-789" y="623"/>
         </scene>
-        <!--View Controller-->
+        <!--Intro6 View Controller-->
         <scene sceneID="w6e-Z5-PfP">
             <objects>
-                <viewController storyboardIdentifier="intro7" id="zJg-VT-sGS" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="intro6" id="zJg-VT-sGS" customClass="Intro6ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XQb-Ae-Ab6"/>
                         <viewControllerLayoutGuide type="bottom" id="iQk-Mf-XF7"/>
@@ -491,10 +497,10 @@
             </objects>
             <point key="canvasLocation" x="-169" y="623"/>
         </scene>
-        <!--Intro6 View Controller-->
+        <!--Intro Last View Controller-->
         <scene sceneID="ArT-Xc-vNo">
             <objects>
-                <viewController storyboardIdentifier="intro6" id="wIF-fN-Ao5" customClass="Intro6ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="introLast" id="wIF-fN-Ao5" customClass="IntroLastViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yKT-e1-txb"/>
                         <viewControllerLayoutGuide type="bottom" id="66X-VT-UEB"/>
@@ -592,7 +598,7 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STEP(1) 1/17問 全1/53問" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LD7-63-Va9">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="STEP(1) 1/17問 全1/53問" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LD7-63-Va9">
                                 <rect key="frame" x="387" y="569" width="183" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -609,7 +615,7 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="chigau" translatesAutoresizingMaskIntoConstraints="NO" id="gpQ-gv-hCR">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chigau" translatesAutoresizingMaskIntoConstraints="NO" id="gpQ-gv-hCR">
                                 <rect key="frame" x="26" y="461" width="80" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="API-IX-6R7"/>
@@ -623,7 +629,7 @@
                                     <constraint firstAttribute="width" constant="60" id="cga-rW-Zdt"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="maasouda" translatesAutoresizingMaskIntoConstraints="NO" id="NFO-mr-AUa">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="maasouda" translatesAutoresizingMaskIntoConstraints="NO" id="NFO-mr-AUa">
                                 <rect key="frame" x="494" y="455" width="80" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="5ky-U7-njZ"/>
@@ -746,7 +752,7 @@
                                     <constraint firstAttribute="width" constant="300" id="k5l-NB-jo8"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="診断結果 1/3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xWc-vD-QET">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="診断結果 1/3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xWc-vD-QET">
                                 <rect key="frame" x="265" y="59" width="98" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -764,7 +770,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="AppIcon29x29" translatesAutoresizingMaskIntoConstraints="NO" id="O0P-P4-9SY">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppIcon29x29" translatesAutoresizingMaskIntoConstraints="NO" id="O0P-P4-9SY">
                                 <rect key="frame" x="231" y="55" width="29" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="29" id="S5c-7j-FKX"/>
